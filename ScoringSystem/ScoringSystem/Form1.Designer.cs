@@ -65,6 +65,15 @@
             this.btnWinBlue = new System.Windows.Forms.Button();
             this.pnlLineBlue = new System.Windows.Forms.Panel();
             this.pnlSetting = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnFullScreen = new System.Windows.Forms.Button();
             this.lblNameWin = new System.Windows.Forms.Label();
@@ -98,6 +107,12 @@
             this.pnlRed.SuspendLayout();
             this.pnlBlue.SuspendLayout();
             this.pnlSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrNumberMatch)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -557,6 +572,15 @@
             // pnlSetting
             // 
             this.pnlSetting.BackColor = System.Drawing.Color.White;
+            this.pnlSetting.Controls.Add(this.label16);
+            this.pnlSetting.Controls.Add(this.label15);
+            this.pnlSetting.Controls.Add(this.pictureBox7);
+            this.pnlSetting.Controls.Add(this.label17);
+            this.pnlSetting.Controls.Add(this.pictureBox5);
+            this.pnlSetting.Controls.Add(this.pictureBox6);
+            this.pnlSetting.Controls.Add(this.pictureBox3);
+            this.pnlSetting.Controls.Add(this.pictureBox4);
+            this.pnlSetting.Controls.Add(this.pictureBox2);
             this.pnlSetting.Controls.Add(this.label7);
             this.pnlSetting.Controls.Add(this.btnFullScreen);
             this.pnlSetting.Controls.Add(this.lblNameWin);
@@ -565,10 +589,110 @@
             this.pnlSetting.Controls.Add(this.btnNext);
             this.pnlSetting.Controls.Add(this.panel6);
             this.pnlSetting.Controls.Add(this.tableLayoutPanel1);
-            this.pnlSetting.Location = new System.Drawing.Point(1016, 12);
+            this.pnlSetting.Location = new System.Drawing.Point(1000, 0);
             this.pnlSetting.Name = "pnlSetting";
-            this.pnlSetting.Size = new System.Drawing.Size(950, 543);
+            this.pnlSetting.Size = new System.Drawing.Size(1000, 650);
             this.pnlSetting.TabIndex = 29;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Navy;
+            this.label16.Location = new System.Drawing.Point(242, 637);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(68, 9);
+            this.label16.TabIndex = 115;
+            this.label16.Text = "TP.HỒ CHÍ MINH";
+            this.label16.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(272, 499);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 17);
+            this.label15.TabIndex = 114;
+            this.label15.Text = "Các đơn vị tổ chức";
+            this.label15.Visible = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(781, 534);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(200, 59);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 113;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(809, 499);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(146, 17);
+            this.label17.TabIndex = 112;
+            this.label17.Text = "Bản quyền phần mềm";
+            this.label17.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(435, 534);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 111;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(329, 534);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 110;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(223, 534);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 109;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(117, 534);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 108;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(11, 534);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 107;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // label7
             // 
@@ -599,7 +723,7 @@
             // lblNameWin
             // 
             this.lblNameWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameWin.Location = new System.Drawing.Point(388, 453);
+            this.lblNameWin.Location = new System.Drawing.Point(388, 438);
             this.lblNameWin.Name = "lblNameWin";
             this.lblNameWin.Size = new System.Drawing.Size(231, 29);
             this.lblNameWin.TabIndex = 100;
@@ -613,7 +737,7 @@
             this.btnSettingOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettingOk.ForeColor = System.Drawing.Color.White;
             this.btnSettingOk.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSettingOk.Location = new System.Drawing.Point(743, 397);
+            this.btnSettingOk.Location = new System.Drawing.Point(743, 382);
             this.btnSettingOk.Name = "btnSettingOk";
             this.btnSettingOk.Size = new System.Drawing.Size(228, 46);
             this.btnSettingOk.TabIndex = 99;
@@ -627,7 +751,7 @@
             this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrev.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrev.ForeColor = System.Drawing.Color.White;
-            this.btnPrev.Location = new System.Drawing.Point(453, 395);
+            this.btnPrev.Location = new System.Drawing.Point(453, 380);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(46, 46);
             this.btnPrev.TabIndex = 98;
@@ -641,7 +765,7 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(506, 395);
+            this.btnNext.Location = new System.Drawing.Point(506, 380);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(46, 46);
             this.btnNext.TabIndex = 97;
@@ -658,7 +782,7 @@
             this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(21, 213);
+            this.panel6.Location = new System.Drawing.Point(21, 198);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(950, 54);
             this.panel6.TabIndex = 96;
@@ -743,7 +867,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtSchoolRed, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSchoolBlue, 2, 2);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 274);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 259);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -862,7 +986,7 @@
             this.pnlMain.Controls.Add(this.pnlBlue);
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1000, 650);
+            this.pnlMain.Size = new System.Drawing.Size(1022, 654);
             this.pnlMain.TabIndex = 28;
             // 
             // pnlClock
@@ -926,7 +1050,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 650);
+            this.ClientSize = new System.Drawing.Size(1258, 650);
             this.Controls.Add(this.pnlSetting);
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -941,6 +1065,13 @@
             this.pnlRed.ResumeLayout(false);
             this.pnlBlue.ResumeLayout(false);
             this.pnlSetting.ResumeLayout(false);
+            this.pnlSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrNumberMatch)).EndInit();
@@ -1020,6 +1151,15 @@
         private System.Windows.Forms.Label lblScoreRed;
         private System.Windows.Forms.TextBox txtFocus;
         private System.Windows.Forms.Panel pnlClock;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
 
     }
 }

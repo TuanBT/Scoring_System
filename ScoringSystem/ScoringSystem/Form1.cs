@@ -299,7 +299,7 @@ namespace ScoringSystem
 
         public void ClockClick()
         {
-            if(tmrWait.Enabled==true) return;
+            if (tmrWait.Enabled == true) return;
             //Neu dang hiep 1
             if (Variable.sec == 2 && Variable.second == 0)
             {
@@ -593,7 +593,7 @@ namespace ScoringSystem
             if (e.KeyChar == (char)Keys.Enter)
             {
                 //Nếu đang chạy
-                if(Variable.type==1)
+                if (Variable.type == 1)
                 {
                     function.PlaySound();
                     ClockClick();
@@ -604,7 +604,5 @@ namespace ScoringSystem
                 pnlSetting.Visible = true;
             }
         }
-
- 
     }
 }
