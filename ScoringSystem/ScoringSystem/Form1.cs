@@ -285,6 +285,12 @@ namespace ScoringSystem
             }
         }
 
+        private void lblSecName_Click(object sender, EventArgs e)
+        {
+            txtFocus.Focus();
+            ClockClick();
+        }
+
         private void lblClock_Click(object sender, EventArgs e)
         {
             txtFocus.Focus();
@@ -598,5 +604,7 @@ namespace ScoringSystem
                 pnlSetting.Visible = true;
             }
         }
+
+ 
     }
 }

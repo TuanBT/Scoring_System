@@ -1,0 +1,120 @@
+﻿1	48 Kg Nam		K'Viễn	ĐH SP TDTT	Quang Vinh	ĐH Khoa Học Tự Nhiên	
+2	48 Kg Nam		Hoài Nghĩa	ĐH Công Nghệ SG	Tuấn Hải	CĐ Kinh Tế TP HCM	
+3	51 Kg Nam		Văn Thắng	ĐH Luật	Ngọc Luân	ĐH Tôn Đức Thắng	
+4	51 Kg Nam		Thanh Bình	ĐH Hồng Bàng	Thanh Sang	ĐH SP TDTT	
+5	51 Kg Nam		Mạnh Công	ĐH Kiến Trúc	Văn Tình	ĐH FPT	
+6	51 Kg Nam		Điểu Duân	ĐH Văn Hóa	Văn Thành	CĐ GTVT	
+7	51 Kg Nam		Lê Phan	ĐH FPT- Viện QTKD	Đăng Thịnh	ĐH Công Nghệ SG	
+8	51 Kg Nữ		Minh Lý	HV Hàng Không	Thanh Hương	CĐ Kinh Tế TP HCM	
+9	51 Kg Nữ		Thị Linh	ĐH Văn Hóa	Thị Mùi	CĐ GTVT	
+10	54 Kg Nam		Văn Mạnh	CĐ Nghề Hàng Hải TPHCM	Lê Bảo	ĐH Công Nghệ SG	
+11	54 Kg Nam		Đức Anh	ĐH SP TDTT	Anh Khoa	CĐ GTVT	
+12	54 Kg Nam		Trung Phước	ĐH Hồng Bàng	Trọng Đại	ĐH GTVT - CS II	
+13	54 Kg Nam		Thanh Hải	ĐH Văn Hóa	Văn Hạnh	ĐH Luật	
+14	54 Kg Nam		Đình Vinh	ĐH Kiến Trúc	Văn Lộc	ĐH Công Nghiệp TP HCM	
+15	57 Kg Nam		Hoài Nam	ĐH Công Nghiệp TP HCM	Quốc Trung	ĐH Ngân Hàng	
+16	57 Kg Nam		Văn Thống	ĐH Luật	Thế Mỹ	ĐH FPT	
+17	57 Kg Nam		Văn Diệu	ĐH Văn Lang	Minh Em	ĐH SP TDTT	
+18	57 Kg Nam		Văn Vượng	ĐH Văn Hóa	Hoàng Bảo	ĐH Hồng Bàng	
+19	57 Kg Nam		Ngọc Tú	CĐ Kinh Tế - Công Nghệ TP HCM	Hồng Hải	HV Hàng Không	
+20	57 Kg Nam		Khánh Toàn	ĐH Hoa Sen	Minh Châu	ĐH GTVT - CS II	
+21	60 Kg Nam		Anh Duy	ĐH FPT	Văn Linh	ĐH Hồng Bàng	
+22	60 Kg Nam		Lê Văn	ĐH Khoa Học Tự Nhiên	Cao Đạt	ĐH Hoa Sen	
+23	60 Kg Nam		Trọng Nghĩa	CĐ Kinh Tế - Công Nghệ TP HCM	Quang Hải	ĐH CN Thực Phẩm	
+24	60 Kg Nam		Ngọc Hỏi	ĐH Tôn Đức Thắng	Văn Thà	CĐ GTVT	
+25	60 Kg Nam		Văn Trường	ĐH Văn Hóa	Đình Hệ	ĐH GTVT - CS II	
+26	64 Kg Nam		Mạnh Cường	ĐH Sư Phạm KT	Minh Luân	ĐH Hồng Bàng	
+27	42 Kg Nữ		Thị Lan	ĐH Ngân Hàng	Thị Hiền	ĐH Sư Phạm KT	
+28	42 Kg Nữ		Thu Trang	ĐH Công Nghiệp TP HCM	Khánh Ninh	ĐH Hồng Bàng	
+29	42 Kg Nữ		Mai Trâm	ĐH Công Nghệ SG	Tuyết Trinh	HV Hàng Không	
+30	45 Kg Nam		Ngọc Hoàng	ĐH Công Nghiệp TP HCM	Văn Tuấn	ĐH Sư Phạm KT	
+31	45 Kg Nữ		Kiều My	ĐH Công Nghiệp TP HCM	Thuý Ngà	ĐH SP TDTT	
+32	45 Kg Nữ		Tuyết Thanh	ĐH Văn Hóa	Thị Lương	ĐH Kiến Trúc	
+33	45 Kg Nữ		Hồng Phương	ĐH Ngân Hàng	Hằng Ni	HV Hàng Không	
+34	48 Kg Nam		Trọng Phước	CĐ GTVT	Quốc Dũng	ĐH FPT- Viện QTKD	
+35	48 Kg Nam		1		Văn Anh	ĐH Luật	
+36	48 Kg Nam		Văn Hưng	ĐH Văn Hóa	2		
+37	48 Kg Nam		Văn Mạnh	ĐH Công Nghiệp TP HCM	Trường Sinh	ĐH Kiến Trúc	
+38	48 Kg Nữ		Nga Hằng	CĐ Kinh Tế - Công Nghệ TP HCM	Xuân Lam	ĐH Hồng Bàng	
+39	48 Kg Nữ		Tuyết Nhung	CĐ GTVT	Như Tuyết	ĐH Văn Hóa	
+40	48 Kg Nữ		Cẩm Tiên	HV Hàng Không	Thu Thảo	ĐH Luật	
+41	48 Kg Nữ		Thị Nhung	ĐH Kiến Trúc	Kim Na	ĐH SP TDTT	
+42	51 Kg Nam		Trung Hiếu	ĐH Hoa Sen	3		
+43	51 Kg Nam		4		Văn Vũ	ĐH Công Nghiệp TP HCM	
+44	51 Kg Nam		5		6		
+45	51 Kg Nam		7		Bá Lợi	CĐ Kinh Tế - Công Nghệ TP HCM	
+46	51 Kg Nữ		Thị Liên	ĐH Tôn Đức Thắng	Kim Hân	ĐH Hoa Sen	
+47	51 Kg Nữ		8		Như Ý	ĐH Ngân Hàng	
+48	51 Kg Nữ		Thị Duyên	ĐH SP TDTT	9		
+49	51 Kg Nữ		Mỹ Phương	ĐH Công Nghiệp TP HCM	Thực Quanh	ĐH Hồng Bàng	
+50	54 Kg Nam		Quốc Tiên	ĐH FPT	10		
+51	54 Kg Nam		11		Hồng Phúc	ĐH Tôn Đức Thắng	
+52	54 Kg Nam		12		13		
+53	54 Kg Nam		14		Thanh Trung	ĐH CN Thực Phẩm	
+54	54 Kg Nữ		Thị Sương	ĐH Ngân Hàng	Thuý Tràng	HV Hàng Không	
+55	57 Kg Nam		Kỳ Binh	ĐH Khoa Học Tự Nhiên	15		
+56	57 Kg Nam		16		17		
+57	57 Kg Nam		18		19		
+58	57 Kg Nam		20		Tùng Lâm	ĐH Tôn Đức Thắng	
+59	60 Kg Nam		Quang Phúc	ĐH Sư Phạm KT	21		
+60	60 Kg Nam		22		Công Mãi	ĐH SP TDTT	
+61	60 Kg Nam		23		24		
+62	60 Kg Nam		25		Hải Hồ	ĐH Ngân Hàng	
+63	64 Kg Nam		Thiện Tài	ĐH FPT	Thế Long	ĐH SP TDTT	
+64	64 Kg Nam		Hữu Tâm	ĐH Ngân Hàng	Tuất Tính	ĐH Công Nghệ SG	
+65	64 Kg Nam		A Gúc	ĐH Luật	26		
+66	64 Kg Nam		Phú Dũng	ĐH Hoa Sen	Công Tráng	ĐH Kiến Trúc	
+67	68 Kg Nam		Ngọc Tôn	ĐH Kiến Trúc	Nam Hưng	ĐH FPT	
+68	72 Kg Nam		Đình Tuấn	ĐH Hồng Bàng	Văn Đô	ĐH Sư Phạm KT	
+69	72 Kg Nam		Thanh Duy	ĐH Hoa Sen	Hoàng Quân	ĐH Luật	
+70	72 Kg Nam		Quang Lý	CĐ GTVT	Minh Huy	ĐH FPT	
+71	72 Kg Nam		Tuấn Minh	HV Hàng Không	Văn Nhân	CĐ Kinh Tế - Công Nghệ TP HCM	
+72	42 Kg Nữ	BK	Ngọc Thắm	ĐH Văn Hóa	27		
+73	42 Kg Nữ	BK	28		29		
+74	45 Kg Nam	BK	Như Thuỷ	ĐH Công Nghệ SG	Thanh Hương	CĐ GTVT	
+75	45 Kg Nam	BK	30		Văn Hiếu	CĐ Kinh Tế - Công Nghệ TP HCM	
+76	45 Kg Nữ	BK	Quỳnh Nhi	ĐH Hồng Bàng	31		
+77	45 Kg Nữ	BK	32		33		
+78	48 Kg Nam	BK	34		35		
+79	48 Kg Nam	BK	36		37		
+80	48 Kg Nữ	BK	38		39		
+81	48 Kg Nữ	BK	40		41		
+82	51 Kg Nam	BK	42		43		
+83	51 Kg Nam	BK	44		45		
+84	51 Kg Nữ	BK	46		47		
+85	51 Kg Nữ	BK	48		49		
+86	54 Kg Nam	BK	50		51		
+87	54 Kg Nam	BK	52		53		
+88	54 Kg Nữ	BK	Thị Nghĩa	ĐH Tôn Đức Thắng	Ngọc Lợi	ĐH Luật	
+89	54 Kg Nữ	BK	54		Thị Thuý	ĐH SP TDTT	
+90	57 Kg Nam	BK	55		56		
+91	57 Kg Nam	BK	57		58		
+92	57 Kg Nữ	BK	Xuân Mai	ĐH SP TDTT	Kim Lan	CĐ Kinh Tế - Kỹ Thuật Phú Lâm	
+93	57 Kg Nữ	BK	Bích Chi	ĐH Văn Hóa	Huỳnh Như	ĐH Hoa Sen	
+94	60 Kg Nam	BK	59		60		
+95	60 Kg Nam	BK	61		62		
+96	60 Kg Nữ	BK	Kiều Dung	ĐH Ngân Hàng	Kim Ngân	ĐH SP TDTT	
+97	64 Kg Nam	BK	63		64		
+98	64 Kg Nam	BK	65		66		
+99	64 Kg Nữ	BK	Phương Thảo	ĐH Luật	Hồng Ngọc	ĐH Tôn Đức Thắng	
+100	68 Kg Nam	BK	Anh Cường	ĐH SP TDTT	Văn Thiệm	ĐH Sư Phạm KT	
+101	68 Kg Nam	BK	67		Trùng Dương	ĐH Hồng Bàng	
+102	72 Kg Nam	BK	68		69		
+103	72 Kg Nam	BK	70		71		
+104	42 Kg Nữ	CK	72		73		
+105	45 Kg Nam	CK	74		75		
+106	45 Kg Nữ	CK	76		77		
+107	48 Kg Nam	CK	78		79		
+108	48 Kg Nữ	CK	80		81		
+109	51 Kg Nam	CK	82		83		
+110	51 Kg Nữ	CK	84		85		
+111	54 Kg Nam	CK	86		87		
+112	54 Kg Nữ	CK	88		89		
+113	57 Kg Nam	CK	90		91		
+114	57 Kg Nữ	CK	92		93		
+115	60 Kg Nam	CK	94		95		
+116	60 Kg Nữ	CK	Hồng Gấm	ĐH Văn Hóa	96		
+117	64 Kg Nam	CK	97		98		
+118	64 Kg Nữ	CK	Bích Huyền	ĐH Hoa Sen	99		
+119	68 Kg Nam	CK	100		101		
+120	72 Kg Nam	CK	102		103		

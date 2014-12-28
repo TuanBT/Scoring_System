@@ -869,7 +869,7 @@
             // 
             this.pnlClock.Controls.Add(this.lblSecName);
             this.pnlClock.Controls.Add(this.lblClock);
-            this.pnlClock.Location = new System.Drawing.Point(415, 113);
+            this.pnlClock.Location = new System.Drawing.Point(415, 110);
             this.pnlClock.Name = "pnlClock";
             this.pnlClock.Size = new System.Drawing.Size(167, 100);
             this.pnlClock.TabIndex = 31;
