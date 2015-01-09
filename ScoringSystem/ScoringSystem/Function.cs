@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Media;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ScoringSystem
 {
@@ -33,6 +34,12 @@ namespace ScoringSystem
         }
 
         public void PlaySound()
+        {
+            SoundPlayer Sound = new SoundPlayer(Properties.Resources.Reggg);
+            Sound.Play();
+        }
+
+        public void PlaySound(Timer tmr)
         {
             SoundPlayer Sound = new SoundPlayer(Properties.Resources.Reggg);
             Sound.Play();

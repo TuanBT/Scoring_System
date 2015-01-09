@@ -104,6 +104,8 @@
             this.tmrClock = new System.Windows.Forms.Timer(this.components);
             this.tmrWait = new System.Windows.Forms.Timer(this.components);
             this.tmrWin = new System.Windows.Forms.Timer(this.components);
+            this.btnWinBeforeRed = new System.Windows.Forms.Button();
+            this.btnWinBeforeBlue = new System.Windows.Forms.Button();
             this.pnlRed.SuspendLayout();
             this.pnlBlue.SuspendLayout();
             this.pnlSetting.SuspendLayout();
@@ -125,11 +127,11 @@
             this.lblScoreBlue.BackColor = System.Drawing.Color.Blue;
             this.lblScoreBlue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblScoreBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblScoreBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 150F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 170F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScoreBlue.ForeColor = System.Drawing.Color.White;
-            this.lblScoreBlue.Location = new System.Drawing.Point(82, 111);
+            this.lblScoreBlue.Location = new System.Drawing.Point(51, 111);
             this.lblScoreBlue.Name = "lblScoreBlue";
-            this.lblScoreBlue.Size = new System.Drawing.Size(400, 380);
+            this.lblScoreBlue.Size = new System.Drawing.Size(449, 380);
             this.lblScoreBlue.TabIndex = 1;
             this.lblScoreBlue.Text = "00";
             this.lblScoreBlue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,7 +235,7 @@
             // lblSchoolRed
             // 
             this.lblSchoolRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSchoolRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSchoolRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolRed.ForeColor = System.Drawing.Color.Red;
             this.lblSchoolRed.Location = new System.Drawing.Point(0, 0);
             this.lblSchoolRed.Name = "lblSchoolRed";
@@ -245,7 +247,7 @@
             // lblNameRed
             // 
             this.lblNameRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNameRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameRed.ForeColor = System.Drawing.Color.Red;
             this.lblNameRed.Location = new System.Drawing.Point(0, 50);
             this.lblNameRed.Name = "lblNameRed";
@@ -312,7 +314,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(149, 12);
             this.label4.Name = "label4";
@@ -349,7 +351,7 @@
             // lblNameBlue
             // 
             this.lblNameBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNameBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBlue.ForeColor = System.Drawing.Color.Blue;
             this.lblNameBlue.Location = new System.Drawing.Point(153, 49);
             this.lblNameBlue.Name = "lblNameBlue";
@@ -361,7 +363,7 @@
             // lblSchoolBlue
             // 
             this.lblSchoolBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSchoolBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSchoolBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolBlue.ForeColor = System.Drawing.Color.Blue;
             this.lblSchoolBlue.Location = new System.Drawing.Point(148, 0);
             this.lblSchoolBlue.Name = "lblSchoolBlue";
@@ -397,11 +399,11 @@
             this.lblScoreRed.BackColor = System.Drawing.Color.Red;
             this.lblScoreRed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblScoreRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblScoreRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 150F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 170F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScoreRed.ForeColor = System.Drawing.Color.White;
-            this.lblScoreRed.Location = new System.Drawing.Point(15, 111);
+            this.lblScoreRed.Location = new System.Drawing.Point(0, 111);
             this.lblScoreRed.Name = "lblScoreRed";
-            this.lblScoreRed.Size = new System.Drawing.Size(400, 380);
+            this.lblScoreRed.Size = new System.Drawing.Size(448, 380);
             this.lblScoreRed.TabIndex = 38;
             this.lblScoreRed.Text = "00";
             this.lblScoreRed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -572,6 +574,8 @@
             // pnlSetting
             // 
             this.pnlSetting.BackColor = System.Drawing.Color.White;
+            this.pnlSetting.Controls.Add(this.btnWinBeforeBlue);
+            this.pnlSetting.Controls.Add(this.btnWinBeforeRed);
             this.pnlSetting.Controls.Add(this.label16);
             this.pnlSetting.Controls.Add(this.label15);
             this.pnlSetting.Controls.Add(this.pictureBox7);
@@ -589,7 +593,7 @@
             this.pnlSetting.Controls.Add(this.btnNext);
             this.pnlSetting.Controls.Add(this.panel6);
             this.pnlSetting.Controls.Add(this.tableLayoutPanel1);
-            this.pnlSetting.Location = new System.Drawing.Point(1000, 0);
+            this.pnlSetting.Location = new System.Drawing.Point(0, -33);
             this.pnlSetting.Name = "pnlSetting";
             this.pnlSetting.Size = new System.Drawing.Size(1000, 650);
             this.pnlSetting.TabIndex = 29;
@@ -696,7 +700,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(147, 0);
             this.label7.Name = "label7";
@@ -874,7 +878,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(953, 98);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(880, 98);
             this.tableLayoutPanel1.TabIndex = 95;
             // 
             // label1
@@ -882,9 +886,9 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 0);
+            this.label1.Location = new System.Drawing.Point(126, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 32);
+            this.label1.Size = new System.Drawing.Size(261, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -894,9 +898,9 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(425, 0);
+            this.label5.Location = new System.Drawing.Point(393, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(525, 32);
+            this.label5.Size = new System.Drawing.Size(484, 32);
             this.label5.TabIndex = 1;
             this.label5.Text = "Đơn vị";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -909,7 +913,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(3, 67);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 31);
+            this.label9.Size = new System.Drawing.Size(117, 31);
             this.label9.TabIndex = 4;
             this.label9.Text = "Xanh";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -922,7 +926,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(3, 32);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 32);
+            this.label8.Size = new System.Drawing.Size(117, 32);
             this.label8.TabIndex = 3;
             this.label8.Text = "Đỏ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -933,9 +937,9 @@
             this.txtNameRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNameRed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNameRed.ForeColor = System.Drawing.Color.White;
-            this.txtNameRed.Location = new System.Drawing.Point(136, 35);
+            this.txtNameRed.Location = new System.Drawing.Point(126, 35);
             this.txtNameRed.Name = "txtNameRed";
-            this.txtNameRed.Size = new System.Drawing.Size(283, 30);
+            this.txtNameRed.Size = new System.Drawing.Size(261, 30);
             this.txtNameRed.TabIndex = 94;
             // 
             // txtNameBlue
@@ -944,9 +948,9 @@
             this.txtNameBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNameBlue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNameBlue.ForeColor = System.Drawing.Color.White;
-            this.txtNameBlue.Location = new System.Drawing.Point(136, 67);
+            this.txtNameBlue.Location = new System.Drawing.Point(126, 67);
             this.txtNameBlue.Name = "txtNameBlue";
-            this.txtNameBlue.Size = new System.Drawing.Size(283, 30);
+            this.txtNameBlue.Size = new System.Drawing.Size(261, 30);
             this.txtNameBlue.TabIndex = 95;
             // 
             // txtSchoolRed
@@ -955,9 +959,9 @@
             this.txtSchoolRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSchoolRed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSchoolRed.ForeColor = System.Drawing.Color.White;
-            this.txtSchoolRed.Location = new System.Drawing.Point(425, 35);
+            this.txtSchoolRed.Location = new System.Drawing.Point(393, 35);
             this.txtSchoolRed.Name = "txtSchoolRed";
-            this.txtSchoolRed.Size = new System.Drawing.Size(525, 30);
+            this.txtSchoolRed.Size = new System.Drawing.Size(484, 30);
             this.txtSchoolRed.TabIndex = 96;
             // 
             // txtSchoolBlue
@@ -966,9 +970,9 @@
             this.txtSchoolBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSchoolBlue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSchoolBlue.ForeColor = System.Drawing.Color.White;
-            this.txtSchoolBlue.Location = new System.Drawing.Point(425, 67);
+            this.txtSchoolBlue.Location = new System.Drawing.Point(393, 67);
             this.txtSchoolBlue.Name = "txtSchoolBlue";
-            this.txtSchoolBlue.Size = new System.Drawing.Size(525, 30);
+            this.txtSchoolBlue.Size = new System.Drawing.Size(484, 30);
             this.txtSchoolBlue.TabIndex = 97;
             // 
             // pnlMain
@@ -1044,6 +1048,34 @@
             // 
             this.tmrWin.Interval = 500;
             this.tmrWin.Tick += new System.EventHandler(this.tmrWin_Tick);
+            // 
+            // btnWinBeforeRed
+            // 
+            this.btnWinBeforeRed.BackColor = System.Drawing.Color.Red;
+            this.btnWinBeforeRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWinBeforeRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWinBeforeRed.ForeColor = System.Drawing.Color.White;
+            this.btnWinBeforeRed.Location = new System.Drawing.Point(907, 291);
+            this.btnWinBeforeRed.Name = "btnWinBeforeRed";
+            this.btnWinBeforeRed.Size = new System.Drawing.Size(71, 33);
+            this.btnWinBeforeRed.TabIndex = 116;
+            this.btnWinBeforeRed.Text = "Win";
+            this.btnWinBeforeRed.UseVisualStyleBackColor = false;
+            this.btnWinBeforeRed.Click += new System.EventHandler(this.btnWinBeforeRed_Click);
+            // 
+            // btnWinBeforeBlue
+            // 
+            this.btnWinBeforeBlue.BackColor = System.Drawing.Color.Blue;
+            this.btnWinBeforeBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWinBeforeBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWinBeforeBlue.ForeColor = System.Drawing.Color.White;
+            this.btnWinBeforeBlue.Location = new System.Drawing.Point(907, 325);
+            this.btnWinBeforeBlue.Name = "btnWinBeforeBlue";
+            this.btnWinBeforeBlue.Size = new System.Drawing.Size(71, 32);
+            this.btnWinBeforeBlue.TabIndex = 117;
+            this.btnWinBeforeBlue.Text = "Win";
+            this.btnWinBeforeBlue.UseVisualStyleBackColor = false;
+            this.btnWinBeforeBlue.Click += new System.EventHandler(this.btnWinBeforeBlue_Click);
             // 
             // Form1
             // 
@@ -1160,6 +1192,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnWinBeforeBlue;
+        private System.Windows.Forms.Button btnWinBeforeRed;
 
     }
 }

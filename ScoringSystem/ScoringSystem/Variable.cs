@@ -7,8 +7,8 @@ namespace ScoringSystem
 {
     public static class Variable
     {
-        public static int timeSec = 5;    //120
-        public static int timeFree = 4;    //45
+        public static int timeSec = 120;    //120
+        public static int timeFree = 45;    //45
         public static int sec = 1;          //0 GL, 1 H1, 2 H2
         public static int type = 0;         //0 dung, 1 chay
         public static int second = 120;     //120

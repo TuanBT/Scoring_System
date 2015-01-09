@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 using ScoringSystem.Data;
 
@@ -300,6 +301,11 @@ namespace ScoringSystem
         public void ClockClick()
         {
             if (tmrWait.Enabled == true) return;
+            if (Variable.second == Variable.timeSec && Variable.type == 0)
+            {
+                function.PlaySound();
+                Thread.Sleep(2000);
+            }
             //Neu dang hiep 1
             if (Variable.sec == 2 && Variable.second == 0)
             {
@@ -462,6 +468,9 @@ namespace ScoringSystem
 
         private void ResetForm()
         {
+            tmrClock.Enabled = false;
+            tmrWait.Enabled = false;
+            tmrWin.Enabled = false;
             lblMatchNum.Text = nmrNumberMatch.Value.ToString();
             lblSchoolRed.Text = txtSchoolRed.Text;
             lblNameRed.Text = txtNameRed.Text;
@@ -603,6 +612,32 @@ namespace ScoringSystem
             {
                 pnlSetting.Visible = true;
             }
+        }
+
+        private void btnWinBeforeRed_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("ĐỎ thắng?", "Đỏ thắng", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Variable.winTeam = 0;
+                fillData.SaveMath(nmrNumberMatch.Value.ToString(), Variable.winTeam.ToString());
+                lblNameWin.ForeColor = Color.Red;
+                lblNameWin.Text = txtNameRed.Text;
+            }
+            else if (dialogResult == DialogResult.No) { }
+        }
+
+        private void btnWinBeforeBlue_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("XANH thắng?", "Xanh thắng", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Variable.winTeam = 1;
+                fillData.SaveMath(nmrNumberMatch.Value.ToString(), Variable.winTeam.ToString());
+                lblNameWin.ForeColor = Color.Blue;
+                lblNameWin.Text = txtNameBlue.Text;
+            }
+            else if (dialogResult == DialogResult.No) { }
         }
     }
 }

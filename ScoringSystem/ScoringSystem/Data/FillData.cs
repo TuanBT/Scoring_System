@@ -48,6 +48,7 @@ namespace ScoringSystem.Data
         public void FillFromMatch(NumericUpDown nmrNumberMatch)
         {
             string matchString = nmrNumberMatch.Value.ToString();
+            Variable.MATCHES = TextDataUltil.ReadMatchText();
             try
             {
                 var match = new Match();
