@@ -334,26 +334,26 @@ namespace ScoringSystem
 
         private void CheckWin()
         {
-            if (Convert.ToInt32(lblScoreRed.Text) > Convert.ToInt32(lblScoreBlue.Text))
+            /*if (Convert.ToInt32(lblScoreRed.Text) > Convert.ToInt32(lblScoreBlue.Text))
             {
                 Variable.winTeam = 0;
             }
             else if (Convert.ToInt32(lblScoreBlue.Text) > Convert.ToInt32(lblScoreRed.Text))
             {
                 Variable.winTeam = 1;
-            }
+            }*/
             //Nếu hòa
-            else
+            /*else
             {
-                /* if (Variable.LastScore == 0)
+                 if (Variable.LastScore == 0)
                  {
                      Variable.winTeam = 0;
                  }
                  else if (Variable.LastScore == 1)
                  {
                      Variable.winTeam = 1;
-                 }*/
-            }
+                 }
+            }*/
         }
 
         private void tmrWait_Tick(object sender, EventArgs e)
@@ -638,6 +638,31 @@ namespace ScoringSystem
                 lblNameWin.Text = txtNameBlue.Text;
             }
             else if (dialogResult == DialogResult.No) { }
+        }
+
+        private void lblNameBlue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNameRed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSchoolRed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlLineRed_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlLineBlue_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

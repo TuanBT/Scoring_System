@@ -102,7 +102,6 @@
   <ItemGroup>
     <None Include="Resources\Match.txt" />
     <Content Include="icon.ico" />
-    <Content Include="SS_icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

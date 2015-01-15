@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblScoreBlue = new System.Windows.Forms.Label();
-            this.lblSecName = new System.Windows.Forms.Label();
             this.lblClock = new System.Windows.Forms.Label();
             this.btnS2Blue = new System.Windows.Forms.Button();
             this.btnS1Blue = new System.Windows.Forms.Button();
@@ -65,6 +64,8 @@
             this.btnWinBlue = new System.Windows.Forms.Button();
             this.pnlLineBlue = new System.Windows.Forms.Panel();
             this.pnlSetting = new System.Windows.Forms.Panel();
+            this.btnWinBeforeBlue = new System.Windows.Forms.Button();
+            this.btnWinBeforeRed = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -100,12 +101,10 @@
             this.pnlClock = new System.Windows.Forms.Panel();
             this.txtFocus = new System.Windows.Forms.TextBox();
             this.lblMatchType = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.tmrClock = new System.Windows.Forms.Timer(this.components);
             this.tmrWait = new System.Windows.Forms.Timer(this.components);
             this.tmrWin = new System.Windows.Forms.Timer(this.components);
-            this.btnWinBeforeRed = new System.Windows.Forms.Button();
-            this.btnWinBeforeBlue = new System.Windows.Forms.Button();
+            this.lblSecName = new System.Windows.Forms.Label();
             this.pnlRed.SuspendLayout();
             this.pnlBlue.SuspendLayout();
             this.pnlSetting.SuspendLayout();
@@ -129,7 +128,7 @@
             this.lblScoreBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblScoreBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 170F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScoreBlue.ForeColor = System.Drawing.Color.White;
-            this.lblScoreBlue.Location = new System.Drawing.Point(51, 111);
+            this.lblScoreBlue.Location = new System.Drawing.Point(51, 117);
             this.lblScoreBlue.Name = "lblScoreBlue";
             this.lblScoreBlue.Size = new System.Drawing.Size(449, 380);
             this.lblScoreBlue.TabIndex = 1;
@@ -137,26 +136,16 @@
             this.lblScoreBlue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblScoreBlue.Click += new System.EventHandler(this.lblScoreBlue_Click);
             // 
-            // lblSecName
-            // 
-            this.lblSecName.BackColor = System.Drawing.Color.Transparent;
-            this.lblSecName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecName.Location = new System.Drawing.Point(2, 0);
-            this.lblSecName.Name = "lblSecName";
-            this.lblSecName.Size = new System.Drawing.Size(165, 40);
-            this.lblSecName.TabIndex = 2;
-            this.lblSecName.Text = "Hiệp 1";
-            this.lblSecName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblClock
             // 
             this.lblClock.BackColor = System.Drawing.Color.Transparent;
             this.lblClock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClock.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblClock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClock.Location = new System.Drawing.Point(2, 40);
+            this.lblClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClock.Location = new System.Drawing.Point(0, 40);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(165, 63);
+            this.lblClock.Size = new System.Drawing.Size(270, 89);
             this.lblClock.TabIndex = 3;
             this.lblClock.Text = "02:00";
             this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -237,24 +226,26 @@
             this.lblSchoolRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSchoolRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolRed.ForeColor = System.Drawing.Color.Red;
-            this.lblSchoolRed.Location = new System.Drawing.Point(0, 0);
+            this.lblSchoolRed.Location = new System.Drawing.Point(0, 10);
             this.lblSchoolRed.Name = "lblSchoolRed";
             this.lblSchoolRed.Size = new System.Drawing.Size(350, 45);
             this.lblSchoolRed.TabIndex = 13;
             this.lblSchoolRed.Text = "-";
             this.lblSchoolRed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblSchoolRed.Click += new System.EventHandler(this.lblSchoolRed_Click);
             // 
             // lblNameRed
             // 
             this.lblNameRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNameRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameRed.ForeColor = System.Drawing.Color.Red;
-            this.lblNameRed.Location = new System.Drawing.Point(0, 50);
+            this.lblNameRed.Location = new System.Drawing.Point(0, 60);
             this.lblNameRed.Name = "lblNameRed";
             this.lblNameRed.Size = new System.Drawing.Size(350, 40);
             this.lblNameRed.TabIndex = 14;
             this.lblNameRed.Text = "-";
             this.lblNameRed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNameRed.Click += new System.EventHandler(this.lblNameRed_Click);
             // 
             // btn2Red
             // 
@@ -314,11 +305,11 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(149, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(690, 90);
+            this.label4.Size = new System.Drawing.Size(668, 90);
             this.label4.TabIndex = 19;
             this.label4.Text = "GIẢI VOVINAM HỘI THAO SINH VIÊN\r\nTP.HCM LẦN THỨ 2 NĂM HỌC 2014 - 2015";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -328,22 +319,22 @@
             this.lblMatchInfo.BackColor = System.Drawing.Color.White;
             this.lblMatchInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatchInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblMatchInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchInfo.Location = new System.Drawing.Point(13, 11);
+            this.lblMatchInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatchInfo.Location = new System.Drawing.Point(7, 11);
             this.lblMatchInfo.Name = "lblMatchInfo";
-            this.lblMatchInfo.Size = new System.Drawing.Size(130, 90);
+            this.lblMatchInfo.Size = new System.Drawing.Size(90, 90);
             this.lblMatchInfo.TabIndex = 20;
-            this.lblMatchInfo.Text = "-Kg -";
+            this.lblMatchInfo.Text = "- Kg -";
             this.lblMatchInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMatchNum
             // 
             this.lblMatchNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatchNum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblMatchNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchNum.Location = new System.Drawing.Point(897, 45);
+            this.lblMatchNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatchNum.Location = new System.Drawing.Point(820, 10);
             this.lblMatchNum.Name = "lblMatchNum";
-            this.lblMatchNum.Size = new System.Drawing.Size(90, 54);
+            this.lblMatchNum.Size = new System.Drawing.Size(174, 90);
             this.lblMatchNum.TabIndex = 22;
             this.lblMatchNum.Text = "0";
             this.lblMatchNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -353,19 +344,20 @@
             this.lblNameBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNameBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBlue.ForeColor = System.Drawing.Color.Blue;
-            this.lblNameBlue.Location = new System.Drawing.Point(153, 49);
+            this.lblNameBlue.Location = new System.Drawing.Point(153, 59);
             this.lblNameBlue.Name = "lblNameBlue";
             this.lblNameBlue.Size = new System.Drawing.Size(347, 40);
             this.lblNameBlue.TabIndex = 25;
             this.lblNameBlue.Text = "-";
             this.lblNameBlue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblNameBlue.Click += new System.EventHandler(this.lblNameBlue_Click);
             // 
             // lblSchoolBlue
             // 
             this.lblSchoolBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSchoolBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolBlue.ForeColor = System.Drawing.Color.Blue;
-            this.lblSchoolBlue.Location = new System.Drawing.Point(148, 0);
+            this.lblSchoolBlue.Location = new System.Drawing.Point(148, 10);
             this.lblSchoolBlue.Name = "lblSchoolBlue";
             this.lblSchoolBlue.Size = new System.Drawing.Size(350, 45);
             this.lblSchoolBlue.TabIndex = 24;
@@ -401,7 +393,7 @@
             this.lblScoreRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblScoreRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 170F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScoreRed.ForeColor = System.Drawing.Color.White;
-            this.lblScoreRed.Location = new System.Drawing.Point(0, 111);
+            this.lblScoreRed.Location = new System.Drawing.Point(0, 117);
             this.lblScoreRed.Name = "lblScoreRed";
             this.lblScoreRed.Size = new System.Drawing.Size(448, 380);
             this.lblScoreRed.TabIndex = 38;
@@ -474,10 +466,11 @@
             // pnlLineRed
             // 
             this.pnlLineRed.BackColor = System.Drawing.Color.Red;
-            this.pnlLineRed.Location = new System.Drawing.Point(5, 43);
+            this.pnlLineRed.Location = new System.Drawing.Point(5, 53);
             this.pnlLineRed.Name = "pnlLineRed";
             this.pnlLineRed.Size = new System.Drawing.Size(300, 3);
             this.pnlLineRed.TabIndex = 28;
+            this.pnlLineRed.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLineRed_Paint);
             // 
             // pnlBlue
             // 
@@ -566,10 +559,11 @@
             // pnlLineBlue
             // 
             this.pnlLineBlue.BackColor = System.Drawing.Color.Blue;
-            this.pnlLineBlue.Location = new System.Drawing.Point(191, 43);
+            this.pnlLineBlue.Location = new System.Drawing.Point(191, 53);
             this.pnlLineBlue.Name = "pnlLineBlue";
             this.pnlLineBlue.Size = new System.Drawing.Size(300, 3);
             this.pnlLineBlue.TabIndex = 29;
+            this.pnlLineBlue.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLineBlue_Paint);
             // 
             // pnlSetting
             // 
@@ -593,10 +587,38 @@
             this.pnlSetting.Controls.Add(this.btnNext);
             this.pnlSetting.Controls.Add(this.panel6);
             this.pnlSetting.Controls.Add(this.tableLayoutPanel1);
-            this.pnlSetting.Location = new System.Drawing.Point(0, -33);
+            this.pnlSetting.Location = new System.Drawing.Point(1000, 0);
             this.pnlSetting.Name = "pnlSetting";
             this.pnlSetting.Size = new System.Drawing.Size(1000, 650);
             this.pnlSetting.TabIndex = 29;
+            // 
+            // btnWinBeforeBlue
+            // 
+            this.btnWinBeforeBlue.BackColor = System.Drawing.Color.Blue;
+            this.btnWinBeforeBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWinBeforeBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWinBeforeBlue.ForeColor = System.Drawing.Color.White;
+            this.btnWinBeforeBlue.Location = new System.Drawing.Point(907, 325);
+            this.btnWinBeforeBlue.Name = "btnWinBeforeBlue";
+            this.btnWinBeforeBlue.Size = new System.Drawing.Size(71, 32);
+            this.btnWinBeforeBlue.TabIndex = 117;
+            this.btnWinBeforeBlue.Text = "Win";
+            this.btnWinBeforeBlue.UseVisualStyleBackColor = false;
+            this.btnWinBeforeBlue.Click += new System.EventHandler(this.btnWinBeforeBlue_Click);
+            // 
+            // btnWinBeforeRed
+            // 
+            this.btnWinBeforeRed.BackColor = System.Drawing.Color.Red;
+            this.btnWinBeforeRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWinBeforeRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWinBeforeRed.ForeColor = System.Drawing.Color.White;
+            this.btnWinBeforeRed.Location = new System.Drawing.Point(907, 291);
+            this.btnWinBeforeRed.Name = "btnWinBeforeRed";
+            this.btnWinBeforeRed.Size = new System.Drawing.Size(71, 33);
+            this.btnWinBeforeRed.TabIndex = 116;
+            this.btnWinBeforeRed.Text = "Win";
+            this.btnWinBeforeRed.UseVisualStyleBackColor = false;
+            this.btnWinBeforeRed.Click += new System.EventHandler(this.btnWinBeforeRed_Click);
             // 
             // label16
             // 
@@ -981,7 +1003,6 @@
             this.pnlMain.Controls.Add(this.pnlClock);
             this.pnlMain.Controls.Add(this.txtFocus);
             this.pnlMain.Controls.Add(this.lblMatchType);
-            this.pnlMain.Controls.Add(this.label3);
             this.pnlMain.Controls.Add(this.lblMatchInfo);
             this.pnlMain.Controls.Add(this.lblMatchNum);
             this.pnlMain.Controls.Add(this.btnEnd);
@@ -997,9 +1018,9 @@
             // 
             this.pnlClock.Controls.Add(this.lblSecName);
             this.pnlClock.Controls.Add(this.lblClock);
-            this.pnlClock.Location = new System.Drawing.Point(415, 110);
+            this.pnlClock.Location = new System.Drawing.Point(364, 95);
             this.pnlClock.Name = "pnlClock";
-            this.pnlClock.Size = new System.Drawing.Size(167, 100);
+            this.pnlClock.Size = new System.Drawing.Size(270, 129);
             this.pnlClock.TabIndex = 31;
             // 
             // txtFocus
@@ -1015,24 +1036,12 @@
             this.lblMatchType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatchType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMatchType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchType.Location = new System.Drawing.Point(845, 11);
+            this.lblMatchType.Location = new System.Drawing.Point(100, 11);
             this.lblMatchType.Name = "lblMatchType";
-            this.lblMatchType.Size = new System.Drawing.Size(50, 88);
+            this.lblMatchType.Size = new System.Drawing.Size(50, 90);
             this.lblMatchType.TabIndex = 29;
             this.lblMatchType.Text = "CK";
             this.lblMatchType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(897, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 34);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Trận số";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tmrClock
             // 
@@ -1049,33 +1058,17 @@
             this.tmrWin.Interval = 500;
             this.tmrWin.Tick += new System.EventHandler(this.tmrWin_Tick);
             // 
-            // btnWinBeforeRed
+            // lblSecName
             // 
-            this.btnWinBeforeRed.BackColor = System.Drawing.Color.Red;
-            this.btnWinBeforeRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWinBeforeRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWinBeforeRed.ForeColor = System.Drawing.Color.White;
-            this.btnWinBeforeRed.Location = new System.Drawing.Point(907, 291);
-            this.btnWinBeforeRed.Name = "btnWinBeforeRed";
-            this.btnWinBeforeRed.Size = new System.Drawing.Size(71, 33);
-            this.btnWinBeforeRed.TabIndex = 116;
-            this.btnWinBeforeRed.Text = "Win";
-            this.btnWinBeforeRed.UseVisualStyleBackColor = false;
-            this.btnWinBeforeRed.Click += new System.EventHandler(this.btnWinBeforeRed_Click);
-            // 
-            // btnWinBeforeBlue
-            // 
-            this.btnWinBeforeBlue.BackColor = System.Drawing.Color.Blue;
-            this.btnWinBeforeBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWinBeforeBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWinBeforeBlue.ForeColor = System.Drawing.Color.White;
-            this.btnWinBeforeBlue.Location = new System.Drawing.Point(907, 325);
-            this.btnWinBeforeBlue.Name = "btnWinBeforeBlue";
-            this.btnWinBeforeBlue.Size = new System.Drawing.Size(71, 32);
-            this.btnWinBeforeBlue.TabIndex = 117;
-            this.btnWinBeforeBlue.Text = "Win";
-            this.btnWinBeforeBlue.UseVisualStyleBackColor = false;
-            this.btnWinBeforeBlue.Click += new System.EventHandler(this.btnWinBeforeBlue_Click);
+            this.lblSecName.BackColor = System.Drawing.Color.Transparent;
+            this.lblSecName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSecName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecName.Location = new System.Drawing.Point(0, 0);
+            this.lblSecName.Name = "lblSecName";
+            this.lblSecName.Size = new System.Drawing.Size(270, 40);
+            this.lblSecName.TabIndex = 2;
+            this.lblSecName.Text = "Hiệp 1";
+            this.lblSecName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -1119,7 +1112,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblScoreBlue;
-        private System.Windows.Forms.Label lblSecName;
         private System.Windows.Forms.Label lblClock;
         private System.Windows.Forms.Button btnS2Blue;
         private System.Windows.Forms.Button btnS1Blue;
@@ -1164,7 +1156,6 @@
         private System.Windows.Forms.TextBox txtNameBlue;
         private System.Windows.Forms.TextBox txtSchoolRed;
         private System.Windows.Forms.TextBox txtSchoolBlue;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnFullScreen;
         private System.Windows.Forms.Label lblMatchType;
         private System.Windows.Forms.Label lblMatchTypeSetting;
@@ -1194,6 +1185,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnWinBeforeBlue;
         private System.Windows.Forms.Button btnWinBeforeRed;
+        private System.Windows.Forms.Label lblSecName;
 
     }
 }

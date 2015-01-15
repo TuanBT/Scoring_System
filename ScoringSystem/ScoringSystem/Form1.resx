@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="lblSecName.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="lblClock.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -154,15 +151,6 @@
     <value>True</value>
   </metadata>
   <metadata name="btnS2Red.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label4.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblMatchInfo.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblMatchNum.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lblNameBlue.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -250,7 +238,7 @@
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAABSCAIAAABhQH4nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AADIbSURBVHhe7V0HWFRH196YWEB6r0tHbDSNil3ECvbeK6KC
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAADIbSURBVHhe7V0HWFRH196YWEB6r0tHbDSNil3ECvbeK6KC
         ghp7SewtRj+NxoItlggqSBcrCpaoAbti7xr77rIsbLv/OzuXZVlWYtfkv+9znn3mnjkzd7ic954zcxuP
         4cCBwxcFR0IOHL4wOBJy4PCFwZGQA4cvDI6EHDh8YXAk5MDhC4MjIQcOXxgcCTlw+MLgSMiBwxcGR0IO
         HL4wOBJy4PCFwZGQgw4UZm4Rr+iV92N90Y8BIvJbUmYECMd5sqYcPhgcCTmUgOzyEWGYpTDUVBhuLxzF
@@ -470,7 +458,7 @@
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw4AAAsOAUC+4UEAAFsxSURBVHhe7b0FlFZH1jXcTdPu
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw0AAAsNAe0HwCwAAFsxSURBVHhe7b0FlFZH1jXcTdPu
         RtPuLjTu7t64Q9AQQiAQghPcgmtwbdwhwZ2gCe4u3UC7u+1/n7rdCTOTmcn7Td61Zq3/vVD93Mfq3nt2
         nX32qapbjw7+b/uv2v4PkP+y7f8A+S/b/ncAKZI/harI33xVirjPN+Q9lgL1nO8WsciHior4X55r78vD
         H235eblITU5CYnwCYt6/R9S7l3j39jXevnmHt2/fIS7mHZITYpCeloaCQqn4j7bfj6POpChXHZunoDae
@@ -1045,7 +1033,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDgAACw4BQL7hQQAALqxJREFUeF7tfQeUFMX3
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDQAACw0B7QfALAAALqxJREFUeF7tfQeUFMX3
         9Zp+ZhADCqjkqCJZQCQqCIhiQAREEERUTEgQyTlIFBQlK4hkCZJzkJyz5Jxk08zu7E7YmfvdWz2jGxrY
         hQX8n/M9zj3L1PT01LxX9VK9qg4DYIduRMFkbf9F3EE8QmQjMhO3E3bX/Z+BbSNxgHAS3xD3BNv+CxDD
         KxKfExOJfUQUfD71NYrYTXxLlCbsPv+fh20jsSt+zM/wrV3P/2ILUSvYfrNQihhK7AxERMIzcw5cHbog
@@ -1251,7 +1239,7 @@
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEcAAAByCAIAAACOZVtWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAD0cSURBVHhe3bwFfFRpsvef99p7//e+793d2dkB4gJRJLi7
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AAD0cSURBVHhe3bwFfFRpsvef99p7//e+793d2dkB4gJRJLi7
         xAgESAgR3B1CAsHd3SHEnZBAEiDe3WmPu3u7u6bteeskDDvrO3tn9vPfy9Q0J6c73c/3VNWvqs45tJXX
         pdAfa56Xf4TB6yddDJ184YvB9qj9qTf0uBzqfDnU8XrY+DsRro+2Tny50zthz7TUAzPSD83JPjIn+9jc
         zKNz048tSI1amHx8UVLUsoRov9cnA+Ni/ZLO+KSdW5Jxdn766Z+Syv1iiMeljaM2usfryqaJlzdNuRzm
@@ -1518,7 +1506,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIQAAABxCAIAAACbeZxaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAHwjSURBVHhe1fwFdFvXtrAN7zAzM9mJEzMzMzMzMzMzyJZl
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AAHwjSURBVHhe1fwFdFvXtrAN7zAzM9mJEzMzMzMzMzMzyJZl
         y5LFzGRmDsdBx2FmaDhpk7Rpm+xvKTrXNzeFe95x+r//eMd4usaS7MjSfPaca05ZLqRU7vf/Ciplfqql
         f4JSkTdY1csDNCoCwapZGaRTE2pUG6OXH2lakrw/xsuxPjezlxHBa/IilJtUJeiWRepWRKoVBh3I9VbK
         91Yp8lYu9tMsD9CrCNYq8tUs9NEEN4v9tMsDdSuD1Uv9wKNp1YSoVQcpVfofKPfdX+6rWOmvXB2oWPH9
@@ -2051,16 +2039,7 @@
         T3Kw/f8DFMaQytNjzbMAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="lblMatchType.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lblMatchType.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblSecName.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="tmrClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -2071,6 +2050,9 @@
   </metadata>
   <metadata name="tmrWin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>213, 17</value>
+  </metadata>
+  <metadata name="lblSecName.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>28</value>
