@@ -1,4 +1,4 @@
-1	48 Kg Nam		K'Viễn	ĐH SP TDTT	Quang Vinh	ĐH Khoa Học Tự Nhiên	1
+1	48 Kg Nam		K'Viễn	ĐH SP TDTT	Quang Vinh	ĐH Khoa Học Tự Nhiên	0
 2	48 Kg Nam		Hoài Nghĩa	ĐH Công Nghệ SG	Tuấn Hải	CĐ Kinh Tế TP HCM	
 3	51 Kg Nam		Văn Thắng	ĐH Luật	Ngọc Luân	ĐH Tôn Đức Thắng	
 4	51 Kg Nam		Thanh Bình	ĐH Hồng Bàng	Thanh Sang	ĐH SP TDTT	

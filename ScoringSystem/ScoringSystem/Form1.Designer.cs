@@ -43,12 +43,11 @@
             this.btn1Red = new System.Windows.Forms.Button();
             this.btnS1Red = new System.Windows.Forms.Button();
             this.btnS2Red = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTitleMain = new System.Windows.Forms.Label();
             this.lblMatchInfo = new System.Windows.Forms.Label();
             this.lblMatchNum = new System.Windows.Forms.Label();
             this.lblNameBlue = new System.Windows.Forms.Label();
             this.lblSchoolBlue = new System.Windows.Forms.Label();
-            this.pnlRed = new System.Windows.Forms.Panel();
             this.lblScoreRed = new System.Windows.Forms.Label();
             this.btnScoreSec2Red = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -56,7 +55,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnWinRed = new System.Windows.Forms.Button();
             this.pnlLineRed = new System.Windows.Forms.Panel();
-            this.pnlBlue = new System.Windows.Forms.Panel();
             this.btnScoreSec2Blue = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.btnScoreSec1Blue = new System.Windows.Forms.Button();
@@ -64,32 +62,33 @@
             this.btnWinBlue = new System.Windows.Forms.Button();
             this.pnlLineBlue = new System.Windows.Forms.Panel();
             this.pnlSetting = new System.Windows.Forms.Panel();
-            this.btnWinBeforeBlue = new System.Windows.Forms.Button();
-            this.btnWinBeforeRed = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.tblSetting = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnFullScreen = new System.Windows.Forms.Button();
-            this.lblNameWin = new System.Windows.Forms.Label();
-            this.btnSettingOk = new System.Windows.Forms.Button();
+            this.nmrSecTimeSource = new System.Windows.Forms.NumericUpDown();
+            this.nmrFreeTimeSource = new System.Windows.Forms.NumericUpDown();
+            this.txtTitleSource = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnSettingOk = new System.Windows.Forms.Button();
+            this.lblNameWin = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblMatchTypeSetting = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.nmrNumberMatch = new System.Windows.Forms.NumericUpDown();
             this.cbbInfo = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnFullScreen = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnWinBeforeBlue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnWinBeforeRed = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -98,27 +97,22 @@
             this.txtSchoolRed = new System.Windows.Forms.TextBox();
             this.txtSchoolBlue = new System.Windows.Forms.TextBox();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.pnlClock = new System.Windows.Forms.Panel();
+            this.lblSecName = new System.Windows.Forms.Label();
             this.txtFocus = new System.Windows.Forms.TextBox();
             this.lblMatchType = new System.Windows.Forms.Label();
             this.tmrClock = new System.Windows.Forms.Timer(this.components);
             this.tmrWait = new System.Windows.Forms.Timer(this.components);
             this.tmrWin = new System.Windows.Forms.Timer(this.components);
-            this.lblSecName = new System.Windows.Forms.Label();
-            this.pnlRed.SuspendLayout();
-            this.pnlBlue.SuspendLayout();
             this.pnlSetting.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.tblSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrSecTimeSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrFreeTimeSource)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrNumberMatch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlMain.SuspendLayout();
-            this.pnlClock.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblScoreBlue
@@ -126,28 +120,27 @@
             this.lblScoreBlue.BackColor = System.Drawing.Color.Blue;
             this.lblScoreBlue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblScoreBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblScoreBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 170F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 174F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScoreBlue.ForeColor = System.Drawing.Color.White;
-            this.lblScoreBlue.Location = new System.Drawing.Point(51, 117);
+            this.lblScoreBlue.Location = new System.Drawing.Point(551, 227);
             this.lblScoreBlue.Name = "lblScoreBlue";
             this.lblScoreBlue.Size = new System.Drawing.Size(449, 380);
             this.lblScoreBlue.TabIndex = 1;
-            this.lblScoreBlue.Text = "00";
+            this.lblScoreBlue.Text = "-99";
             this.lblScoreBlue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblScoreBlue.Click += new System.EventHandler(this.lblScoreBlue_Click);
             // 
             // lblClock
             // 
-            this.lblClock.BackColor = System.Drawing.Color.Transparent;
+            this.lblClock.BackColor = System.Drawing.Color.Yellow;
             this.lblClock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClock.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblClock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClock.Location = new System.Drawing.Point(0, 40);
+            this.lblClock.Location = new System.Drawing.Point(364, 89);
             this.lblClock.Name = "lblClock";
             this.lblClock.Size = new System.Drawing.Size(270, 89);
             this.lblClock.TabIndex = 3;
-            this.lblClock.Text = "02:00";
+            this.lblClock.Text = "99:99";
             this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblClock.Click += new System.EventHandler(this.lblClock_Click);
             // 
@@ -157,7 +150,7 @@
             this.btnS2Blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnS2Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS2Blue.ForeColor = System.Drawing.Color.Blue;
-            this.btnS2Blue.Location = new System.Drawing.Point(382, 507);
+            this.btnS2Blue.Location = new System.Drawing.Point(882, 617);
             this.btnS2Blue.Name = "btnS2Blue";
             this.btnS2Blue.Size = new System.Drawing.Size(35, 30);
             this.btnS2Blue.TabIndex = 11;
@@ -171,7 +164,7 @@
             this.btnS1Blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnS1Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS1Blue.ForeColor = System.Drawing.Color.Blue;
-            this.btnS1Blue.Location = new System.Drawing.Point(282, 507);
+            this.btnS1Blue.Location = new System.Drawing.Point(782, 617);
             this.btnS1Blue.Name = "btnS1Blue";
             this.btnS1Blue.Size = new System.Drawing.Size(35, 30);
             this.btnS1Blue.TabIndex = 10;
@@ -185,7 +178,7 @@
             this.btn1Blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1Blue.ForeColor = System.Drawing.Color.Blue;
-            this.btn1Blue.Location = new System.Drawing.Point(182, 507);
+            this.btn1Blue.Location = new System.Drawing.Point(682, 617);
             this.btn1Blue.Name = "btn1Blue";
             this.btn1Blue.Size = new System.Drawing.Size(35, 30);
             this.btn1Blue.TabIndex = 9;
@@ -196,10 +189,11 @@
             // btn2Blue
             // 
             this.btn2Blue.BackColor = System.Drawing.Color.Transparent;
+            this.btn2Blue.CausesValidation = false;
             this.btn2Blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2Blue.ForeColor = System.Drawing.Color.Blue;
-            this.btn2Blue.Location = new System.Drawing.Point(82, 507);
+            this.btn2Blue.Location = new System.Drawing.Point(582, 617);
             this.btn2Blue.Name = "btn2Blue";
             this.btn2Blue.Size = new System.Drawing.Size(35, 30);
             this.btn2Blue.TabIndex = 8;
@@ -224,27 +218,26 @@
             // lblSchoolRed
             // 
             this.lblSchoolRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSchoolRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSchoolRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolRed.ForeColor = System.Drawing.Color.Red;
-            this.lblSchoolRed.Location = new System.Drawing.Point(0, 10);
+            this.lblSchoolRed.Location = new System.Drawing.Point(1, 99);
             this.lblSchoolRed.Name = "lblSchoolRed";
-            this.lblSchoolRed.Size = new System.Drawing.Size(350, 45);
+            this.lblSchoolRed.Size = new System.Drawing.Size(360, 55);
             this.lblSchoolRed.TabIndex = 13;
-            this.lblSchoolRed.Text = "-";
-            this.lblSchoolRed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblSchoolRed.Text = "Nguyễn Đặng Thành Trung";
+            this.lblSchoolRed.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.lblSchoolRed.Click += new System.EventHandler(this.lblSchoolRed_Click);
             // 
             // lblNameRed
             // 
             this.lblNameRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNameRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameRed.ForeColor = System.Drawing.Color.Red;
-            this.lblNameRed.Location = new System.Drawing.Point(0, 60);
+            this.lblNameRed.Location = new System.Drawing.Point(1, 164);
             this.lblNameRed.Name = "lblNameRed";
-            this.lblNameRed.Size = new System.Drawing.Size(350, 40);
+            this.lblNameRed.Size = new System.Drawing.Size(360, 55);
             this.lblNameRed.TabIndex = 14;
-            this.lblNameRed.Text = "-";
-            this.lblNameRed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNameRed.Text = "Nguyễn Đặng Thành Trung";
             this.lblNameRed.Click += new System.EventHandler(this.lblNameRed_Click);
             // 
             // btn2Red
@@ -253,7 +246,7 @@
             this.btn2Red.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2Red.ForeColor = System.Drawing.Color.Red;
-            this.btn2Red.Location = new System.Drawing.Point(382, 507);
+            this.btn2Red.Location = new System.Drawing.Point(383, 617);
             this.btn2Red.Name = "btn2Red";
             this.btn2Red.Size = new System.Drawing.Size(35, 30);
             this.btn2Red.TabIndex = 18;
@@ -267,7 +260,7 @@
             this.btn1Red.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1Red.ForeColor = System.Drawing.Color.Red;
-            this.btn1Red.Location = new System.Drawing.Point(282, 507);
+            this.btn1Red.Location = new System.Drawing.Point(283, 617);
             this.btn1Red.Name = "btn1Red";
             this.btn1Red.Size = new System.Drawing.Size(35, 30);
             this.btn1Red.TabIndex = 17;
@@ -281,7 +274,7 @@
             this.btnS1Red.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnS1Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS1Red.ForeColor = System.Drawing.Color.Red;
-            this.btnS1Red.Location = new System.Drawing.Point(182, 507);
+            this.btnS1Red.Location = new System.Drawing.Point(183, 617);
             this.btnS1Red.Name = "btnS1Red";
             this.btnS1Red.Size = new System.Drawing.Size(35, 30);
             this.btnS1Red.TabIndex = 16;
@@ -295,7 +288,7 @@
             this.btnS2Red.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnS2Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnS2Red.ForeColor = System.Drawing.Color.Red;
-            this.btnS2Red.Location = new System.Drawing.Point(82, 507);
+            this.btnS2Red.Location = new System.Drawing.Point(83, 617);
             this.btnS2Red.Name = "btnS2Red";
             this.btnS2Red.Size = new System.Drawing.Size(35, 30);
             this.btnS2Red.TabIndex = 15;
@@ -303,16 +296,17 @@
             this.btnS2Red.UseVisualStyleBackColor = false;
             this.btnS2Red.Click += new System.EventHandler(this.btnS2Red_Click);
             // 
-            // label4
+            // lblTitleMain
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(149, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(668, 90);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "GIẢI VOVINAM HỘI THAO SINH VIÊN\r\nTP.HCM LẦN THỨ 2 NĂM HỌC 2014 - 2015";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitleMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleMain.ForeColor = System.Drawing.Color.Red;
+            this.lblTitleMain.Location = new System.Drawing.Point(6, 70);
+            this.lblTitleMain.Name = "lblTitleMain";
+            this.lblTitleMain.Size = new System.Drawing.Size(668, 88);
+            this.lblTitleMain.TabIndex = 19;
+            this.lblTitleMain.Text = "GIẢI VOVINAM HỘI THAO SINH VIÊN\r\nTP.HCM LẦN THỨ 2 NĂM HỌC 2014 - 2015";
+            this.lblTitleMain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitleMain.Visible = false;
             // 
             // lblMatchInfo
             // 
@@ -320,7 +314,7 @@
             this.lblMatchInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatchInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMatchInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchInfo.Location = new System.Drawing.Point(7, 11);
+            this.lblMatchInfo.Location = new System.Drawing.Point(5, 5);
             this.lblMatchInfo.Name = "lblMatchInfo";
             this.lblMatchInfo.Size = new System.Drawing.Size(90, 90);
             this.lblMatchInfo.TabIndex = 20;
@@ -332,72 +326,50 @@
             this.lblMatchNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatchNum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMatchNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchNum.Location = new System.Drawing.Point(820, 10);
+            this.lblMatchNum.Location = new System.Drawing.Point(808, 5);
             this.lblMatchNum.Name = "lblMatchNum";
-            this.lblMatchNum.Size = new System.Drawing.Size(174, 90);
+            this.lblMatchNum.Size = new System.Drawing.Size(186, 90);
             this.lblMatchNum.TabIndex = 22;
-            this.lblMatchNum.Text = "0";
+            this.lblMatchNum.Text = "999";
             this.lblMatchNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblNameBlue
             // 
             this.lblNameBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNameBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBlue.ForeColor = System.Drawing.Color.Blue;
-            this.lblNameBlue.Location = new System.Drawing.Point(153, 59);
+            this.lblNameBlue.Location = new System.Drawing.Point(638, 163);
             this.lblNameBlue.Name = "lblNameBlue";
-            this.lblNameBlue.Size = new System.Drawing.Size(347, 40);
+            this.lblNameBlue.Size = new System.Drawing.Size(360, 55);
             this.lblNameBlue.TabIndex = 25;
-            this.lblNameBlue.Text = "-";
-            this.lblNameBlue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblNameBlue.Text = "Nguyễn Đặng Thành Trung";
+            this.lblNameBlue.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblNameBlue.Click += new System.EventHandler(this.lblNameBlue_Click);
             // 
             // lblSchoolBlue
             // 
             this.lblSchoolBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSchoolBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSchoolBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolBlue.ForeColor = System.Drawing.Color.Blue;
-            this.lblSchoolBlue.Location = new System.Drawing.Point(148, 10);
+            this.lblSchoolBlue.Location = new System.Drawing.Point(638, 99);
             this.lblSchoolBlue.Name = "lblSchoolBlue";
-            this.lblSchoolBlue.Size = new System.Drawing.Size(350, 45);
+            this.lblSchoolBlue.Size = new System.Drawing.Size(360, 55);
             this.lblSchoolBlue.TabIndex = 24;
-            this.lblSchoolBlue.Text = "-";
-            this.lblSchoolBlue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pnlRed
-            // 
-            this.pnlRed.BackColor = System.Drawing.Color.White;
-            this.pnlRed.Controls.Add(this.lblScoreRed);
-            this.pnlRed.Controls.Add(this.btnScoreSec2Red);
-            this.pnlRed.Controls.Add(this.label14);
-            this.pnlRed.Controls.Add(this.btnScoreSec1Red);
-            this.pnlRed.Controls.Add(this.label2);
-            this.pnlRed.Controls.Add(this.btnWinRed);
-            this.pnlRed.Controls.Add(this.pnlLineRed);
-            this.pnlRed.Controls.Add(this.lblSchoolRed);
-            this.pnlRed.Controls.Add(this.lblNameRed);
-            this.pnlRed.Controls.Add(this.btn2Red);
-            this.pnlRed.Controls.Add(this.btn1Red);
-            this.pnlRed.Controls.Add(this.btnS1Red);
-            this.pnlRed.Controls.Add(this.btnS2Red);
-            this.pnlRed.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pnlRed.Location = new System.Drawing.Point(0, 110);
-            this.pnlRed.Name = "pnlRed";
-            this.pnlRed.Size = new System.Drawing.Size(500, 540);
-            this.pnlRed.TabIndex = 26;
+            this.lblSchoolBlue.Text = "Nguyễn Đặng Thành Trung";
+            this.lblSchoolBlue.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // lblScoreRed
             // 
             this.lblScoreRed.BackColor = System.Drawing.Color.Red;
             this.lblScoreRed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblScoreRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblScoreRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 170F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 174F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScoreRed.ForeColor = System.Drawing.Color.White;
-            this.lblScoreRed.Location = new System.Drawing.Point(0, 117);
+            this.lblScoreRed.Location = new System.Drawing.Point(1, 227);
             this.lblScoreRed.Name = "lblScoreRed";
             this.lblScoreRed.Size = new System.Drawing.Size(448, 380);
             this.lblScoreRed.TabIndex = 38;
-            this.lblScoreRed.Text = "00";
+            this.lblScoreRed.Text = "-99";
             this.lblScoreRed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblScoreRed.Click += new System.EventHandler(this.lblScoreRed_Click);
             // 
@@ -406,7 +378,7 @@
             this.btnScoreSec2Red.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScoreSec2Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScoreSec2Red.ForeColor = System.Drawing.Color.Red;
-            this.btnScoreSec2Red.Location = new System.Drawing.Point(452, 338);
+            this.btnScoreSec2Red.Location = new System.Drawing.Point(453, 448);
             this.btnScoreSec2Red.Margin = new System.Windows.Forms.Padding(0);
             this.btnScoreSec2Red.Name = "btnScoreSec2Red";
             this.btnScoreSec2Red.Size = new System.Drawing.Size(45, 45);
@@ -418,10 +390,10 @@
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(451, 308);
+            this.label14.Location = new System.Drawing.Point(453, 418);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 25);
+            this.label14.Size = new System.Drawing.Size(48, 25);
             this.label14.TabIndex = 35;
             this.label14.Text = "H";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -431,7 +403,7 @@
             this.btnScoreSec1Red.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScoreSec1Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScoreSec1Red.ForeColor = System.Drawing.Color.Red;
-            this.btnScoreSec1Red.Location = new System.Drawing.Point(452, 230);
+            this.btnScoreSec1Red.Location = new System.Drawing.Point(453, 340);
             this.btnScoreSec1Red.Margin = new System.Windows.Forms.Padding(0);
             this.btnScoreSec1Red.Name = "btnScoreSec1Red";
             this.btnScoreSec1Red.Size = new System.Drawing.Size(45, 45);
@@ -443,10 +415,10 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(454, 200);
+            this.label2.Location = new System.Drawing.Point(453, 310);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 25);
+            this.label2.Size = new System.Drawing.Size(48, 25);
             this.label2.TabIndex = 32;
             this.label2.Text = "H";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -455,7 +427,7 @@
             // 
             this.btnWinRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWinRed.ForeColor = System.Drawing.Color.Red;
-            this.btnWinRed.Location = new System.Drawing.Point(0, 500);
+            this.btnWinRed.Location = new System.Drawing.Point(1, 610);
             this.btnWinRed.Name = "btnWinRed";
             this.btnWinRed.Size = new System.Drawing.Size(40, 40);
             this.btnWinRed.TabIndex = 31;
@@ -466,40 +438,18 @@
             // pnlLineRed
             // 
             this.pnlLineRed.BackColor = System.Drawing.Color.Red;
-            this.pnlLineRed.Location = new System.Drawing.Point(5, 53);
+            this.pnlLineRed.Location = new System.Drawing.Point(6, 157);
             this.pnlLineRed.Name = "pnlLineRed";
             this.pnlLineRed.Size = new System.Drawing.Size(300, 3);
             this.pnlLineRed.TabIndex = 28;
             this.pnlLineRed.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLineRed_Paint);
-            // 
-            // pnlBlue
-            // 
-            this.pnlBlue.BackColor = System.Drawing.Color.White;
-            this.pnlBlue.Controls.Add(this.btnScoreSec2Blue);
-            this.pnlBlue.Controls.Add(this.label13);
-            this.pnlBlue.Controls.Add(this.btnScoreSec1Blue);
-            this.pnlBlue.Controls.Add(this.label10);
-            this.pnlBlue.Controls.Add(this.btnWinBlue);
-            this.pnlBlue.Controls.Add(this.pnlLineBlue);
-            this.pnlBlue.Controls.Add(this.lblSchoolBlue);
-            this.pnlBlue.Controls.Add(this.lblScoreBlue);
-            this.pnlBlue.Controls.Add(this.btn2Blue);
-            this.pnlBlue.Controls.Add(this.btn1Blue);
-            this.pnlBlue.Controls.Add(this.btnS2Blue);
-            this.pnlBlue.Controls.Add(this.btnS1Blue);
-            this.pnlBlue.Controls.Add(this.lblNameBlue);
-            this.pnlBlue.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pnlBlue.Location = new System.Drawing.Point(500, 110);
-            this.pnlBlue.Name = "pnlBlue";
-            this.pnlBlue.Size = new System.Drawing.Size(500, 540);
-            this.pnlBlue.TabIndex = 27;
             // 
             // btnScoreSec2Blue
             // 
             this.btnScoreSec2Blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScoreSec2Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScoreSec2Blue.ForeColor = System.Drawing.Color.Blue;
-            this.btnScoreSec2Blue.Location = new System.Drawing.Point(3, 338);
+            this.btnScoreSec2Blue.Location = new System.Drawing.Point(503, 448);
             this.btnScoreSec2Blue.Margin = new System.Windows.Forms.Padding(0);
             this.btnScoreSec2Blue.Name = "btnScoreSec2Blue";
             this.btnScoreSec2Blue.Size = new System.Drawing.Size(45, 45);
@@ -511,10 +461,10 @@
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Blue;
-            this.label13.Location = new System.Drawing.Point(-3, 308);
+            this.label13.Location = new System.Drawing.Point(500, 418);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 25);
+            this.label13.Size = new System.Drawing.Size(48, 25);
             this.label13.TabIndex = 36;
             this.label13.Text = "2";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,7 +474,7 @@
             this.btnScoreSec1Blue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScoreSec1Blue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScoreSec1Blue.ForeColor = System.Drawing.Color.Blue;
-            this.btnScoreSec1Blue.Location = new System.Drawing.Point(3, 230);
+            this.btnScoreSec1Blue.Location = new System.Drawing.Point(503, 340);
             this.btnScoreSec1Blue.Margin = new System.Windows.Forms.Padding(0);
             this.btnScoreSec1Blue.Name = "btnScoreSec1Blue";
             this.btnScoreSec1Blue.Size = new System.Drawing.Size(45, 45);
@@ -536,10 +486,10 @@
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(-2, 200);
+            this.label10.Location = new System.Drawing.Point(500, 310);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 25);
+            this.label10.Size = new System.Drawing.Size(48, 25);
             this.label10.TabIndex = 33;
             this.label10.Text = "1";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -548,7 +498,7 @@
             // 
             this.btnWinBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWinBlue.ForeColor = System.Drawing.Color.Blue;
-            this.btnWinBlue.Location = new System.Drawing.Point(460, 499);
+            this.btnWinBlue.Location = new System.Drawing.Point(960, 609);
             this.btnWinBlue.Name = "btnWinBlue";
             this.btnWinBlue.Size = new System.Drawing.Size(40, 40);
             this.btnWinBlue.TabIndex = 30;
@@ -559,7 +509,7 @@
             // pnlLineBlue
             // 
             this.pnlLineBlue.BackColor = System.Drawing.Color.Blue;
-            this.pnlLineBlue.Location = new System.Drawing.Point(191, 53);
+            this.pnlLineBlue.Location = new System.Drawing.Point(691, 157);
             this.pnlLineBlue.Name = "pnlLineBlue";
             this.pnlLineBlue.Size = new System.Drawing.Size(300, 3);
             this.pnlLineBlue.TabIndex = 29;
@@ -567,219 +517,200 @@
             // 
             // pnlSetting
             // 
+            this.pnlSetting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlSetting.BackColor = System.Drawing.Color.White;
-            this.pnlSetting.Controls.Add(this.btnWinBeforeBlue);
-            this.pnlSetting.Controls.Add(this.btnWinBeforeRed);
-            this.pnlSetting.Controls.Add(this.label16);
-            this.pnlSetting.Controls.Add(this.label15);
+            this.pnlSetting.Controls.Add(this.btnExit);
+            this.pnlSetting.Controls.Add(this.btnSetting);
+            this.pnlSetting.Controls.Add(this.tblSetting);
+            this.pnlSetting.Controls.Add(this.tableLayoutPanel3);
+            this.pnlSetting.Controls.Add(this.tableLayoutPanel2);
             this.pnlSetting.Controls.Add(this.pictureBox7);
-            this.pnlSetting.Controls.Add(this.label17);
-            this.pnlSetting.Controls.Add(this.pictureBox5);
-            this.pnlSetting.Controls.Add(this.pictureBox6);
-            this.pnlSetting.Controls.Add(this.pictureBox3);
-            this.pnlSetting.Controls.Add(this.pictureBox4);
-            this.pnlSetting.Controls.Add(this.pictureBox2);
-            this.pnlSetting.Controls.Add(this.label7);
             this.pnlSetting.Controls.Add(this.btnFullScreen);
-            this.pnlSetting.Controls.Add(this.lblNameWin);
-            this.pnlSetting.Controls.Add(this.btnSettingOk);
-            this.pnlSetting.Controls.Add(this.btnPrev);
-            this.pnlSetting.Controls.Add(this.btnNext);
-            this.pnlSetting.Controls.Add(this.panel6);
             this.pnlSetting.Controls.Add(this.tableLayoutPanel1);
+            this.pnlSetting.Controls.Add(this.lblTitleMain);
             this.pnlSetting.Location = new System.Drawing.Point(1000, 0);
             this.pnlSetting.Name = "pnlSetting";
             this.pnlSetting.Size = new System.Drawing.Size(1000, 650);
             this.pnlSetting.TabIndex = 29;
+            this.pnlSetting.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSetting_Paint);
             // 
-            // btnWinBeforeBlue
+            // btnExit
             // 
-            this.btnWinBeforeBlue.BackColor = System.Drawing.Color.Blue;
-            this.btnWinBeforeBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWinBeforeBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWinBeforeBlue.ForeColor = System.Drawing.Color.White;
-            this.btnWinBeforeBlue.Location = new System.Drawing.Point(907, 325);
-            this.btnWinBeforeBlue.Name = "btnWinBeforeBlue";
-            this.btnWinBeforeBlue.Size = new System.Drawing.Size(71, 32);
-            this.btnWinBeforeBlue.TabIndex = 117;
-            this.btnWinBeforeBlue.Text = "Win";
-            this.btnWinBeforeBlue.UseVisualStyleBackColor = false;
-            this.btnWinBeforeBlue.Click += new System.EventHandler(this.btnWinBeforeBlue_Click);
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(934, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(60, 60);
+            this.btnExit.TabIndex = 120;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnWinBeforeRed
+            // btnSetting
             // 
-            this.btnWinBeforeRed.BackColor = System.Drawing.Color.Red;
-            this.btnWinBeforeRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWinBeforeRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWinBeforeRed.ForeColor = System.Drawing.Color.White;
-            this.btnWinBeforeRed.Location = new System.Drawing.Point(907, 291);
-            this.btnWinBeforeRed.Name = "btnWinBeforeRed";
-            this.btnWinBeforeRed.Size = new System.Drawing.Size(71, 33);
-            this.btnWinBeforeRed.TabIndex = 116;
-            this.btnWinBeforeRed.Text = "Win";
-            this.btnWinBeforeRed.UseVisualStyleBackColor = false;
-            this.btnWinBeforeRed.Click += new System.EventHandler(this.btnWinBeforeRed_Click);
+            this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSetting.BackColor = System.Drawing.Color.Red;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.Location = new System.Drawing.Point(3, 609);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(38, 38);
+            this.btnSetting.TabIndex = 119;
+            this.btnSetting.Text = "Cấu hình";
+            this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
-            // label16
+            // tblSetting
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Navy;
-            this.label16.Location = new System.Drawing.Point(242, 637);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 9);
-            this.label16.TabIndex = 115;
-            this.label16.Text = "TP.HỒ CHÍ MINH";
-            this.label16.Visible = false;
+            this.tblSetting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tblSetting.ColumnCount = 2;
+            this.tblSetting.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.47368F));
+            this.tblSetting.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.52631F));
+            this.tblSetting.Controls.Add(this.label3, 0, 0);
+            this.tblSetting.Controls.Add(this.label4, 0, 1);
+            this.tblSetting.Controls.Add(this.label15, 0, 2);
+            this.tblSetting.Controls.Add(this.nmrSecTimeSource, 1, 1);
+            this.tblSetting.Controls.Add(this.nmrFreeTimeSource, 1, 2);
+            this.tblSetting.Controls.Add(this.txtTitleSource, 1, 0);
+            this.tblSetting.Location = new System.Drawing.Point(21, 496);
+            this.tblSetting.Name = "tblSetting";
+            this.tblSetting.RowCount = 3;
+            this.tblSetting.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tblSetting.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tblSetting.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tblSetting.Size = new System.Drawing.Size(950, 100);
+            this.tblSetting.TabIndex = 118;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(197, 33);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên giải";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(197, 33);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Thi đấu (giây)";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(272, 499);
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 66);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(124, 17);
-            this.label15.TabIndex = 114;
-            this.label15.Text = "Các đơn vị tổ chức";
-            this.label15.Visible = false;
+            this.label15.Size = new System.Drawing.Size(197, 34);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Giải lao (giây)";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
+            // nmrSecTimeSource
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(781, 534);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(200, 59);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 113;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
+            this.nmrSecTimeSource.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nmrSecTimeSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmrSecTimeSource.Location = new System.Drawing.Point(206, 36);
+            this.nmrSecTimeSource.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.nmrSecTimeSource.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nmrSecTimeSource.Name = "nmrSecTimeSource";
+            this.nmrSecTimeSource.Size = new System.Drawing.Size(74, 30);
+            this.nmrSecTimeSource.TabIndex = 3;
+            this.nmrSecTimeSource.Value = new decimal(new int[] {
+            90,
+            0,
+            0,
+            0});
             // 
-            // label17
+            // nmrFreeTimeSource
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(809, 499);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(146, 17);
-            this.label17.TabIndex = 112;
-            this.label17.Text = "Bản quyền phần mềm";
-            this.label17.Visible = false;
+            this.nmrFreeTimeSource.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nmrFreeTimeSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmrFreeTimeSource.Location = new System.Drawing.Point(206, 69);
+            this.nmrFreeTimeSource.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.nmrFreeTimeSource.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nmrFreeTimeSource.Name = "nmrFreeTimeSource";
+            this.nmrFreeTimeSource.Size = new System.Drawing.Size(74, 30);
+            this.nmrFreeTimeSource.TabIndex = 4;
+            this.nmrFreeTimeSource.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
             // 
-            // pictureBox5
+            // txtTitleSource
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(435, 534);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 111;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
+            this.txtTitleSource.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTitleSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitleSource.Location = new System.Drawing.Point(206, 3);
+            this.txtTitleSource.Name = "txtTitleSource";
+            this.txtTitleSource.Size = new System.Drawing.Size(741, 30);
+            this.txtTitleSource.TabIndex = 5;
+            this.txtTitleSource.Text = "Giải Vovinam";
             // 
-            // pictureBox6
+            // tableLayoutPanel3
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(329, 534);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 110;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(223, 534);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 109;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(117, 534);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 108;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 534);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 107;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(147, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(690, 90);
-            this.label7.TabIndex = 103;
-            this.label7.Text = "GIẢI VOVINAM HỘI THAO SINH VIÊN\r\nTP.HCM LẦN THỨ 2 NĂM HỌC 2014 - 2015";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnFullScreen
-            // 
-            this.btnFullScreen.BackColor = System.Drawing.Color.Green;
-            this.btnFullScreen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnFullScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFullScreen.ForeColor = System.Drawing.Color.White;
-            this.btnFullScreen.Location = new System.Drawing.Point(932, 3);
-            this.btnFullScreen.Name = "btnFullScreen";
-            this.btnFullScreen.Size = new System.Drawing.Size(60, 60);
-            this.btnFullScreen.TabIndex = 101;
-            this.btnFullScreen.Text = "Zoom";
-            this.btnFullScreen.UseVisualStyleBackColor = false;
-            this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
-            // 
-            // lblNameWin
-            // 
-            this.lblNameWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameWin.Location = new System.Drawing.Point(388, 438);
-            this.lblNameWin.Name = "lblNameWin";
-            this.lblNameWin.Size = new System.Drawing.Size(231, 29);
-            this.lblNameWin.TabIndex = 100;
-            this.lblNameWin.Text = "-";
-            this.lblNameWin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSettingOk
-            // 
-            this.btnSettingOk.BackColor = System.Drawing.Color.Blue;
-            this.btnSettingOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettingOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettingOk.ForeColor = System.Drawing.Color.White;
-            this.btnSettingOk.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSettingOk.Location = new System.Drawing.Point(743, 382);
-            this.btnSettingOk.Name = "btnSettingOk";
-            this.btnSettingOk.Size = new System.Drawing.Size(228, 46);
-            this.btnSettingOk.TabIndex = 99;
-            this.btnSettingOk.Text = "Bắt đầu trận đấu mới";
-            this.btnSettingOk.UseVisualStyleBackColor = false;
-            this.btnSettingOk.Click += new System.EventHandler(this.btnSettingOk_Click);
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Controls.Add(this.btnPrev, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnNext, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnSettingOk, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblNameWin, 3, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 353);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(950, 100);
+            this.tableLayoutPanel3.TabIndex = 117;
             // 
             // btnPrev
             // 
             this.btnPrev.BackColor = System.Drawing.Color.Green;
+            this.btnPrev.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrev.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrev.ForeColor = System.Drawing.Color.White;
-            this.btnPrev.Location = new System.Drawing.Point(453, 380);
+            this.btnPrev.Location = new System.Drawing.Point(425, 3);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(46, 46);
+            this.btnPrev.Size = new System.Drawing.Size(46, 44);
             this.btnPrev.TabIndex = 98;
             this.btnPrev.Text = "←";
             this.btnPrev.UseVisualStyleBackColor = false;
@@ -788,103 +719,185 @@
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.Green;
+            this.btnNext.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(506, 380);
+            this.btnNext.Location = new System.Drawing.Point(477, 3);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(46, 46);
+            this.btnNext.Size = new System.Drawing.Size(46, 44);
             this.btnNext.TabIndex = 97;
             this.btnNext.Text = "→";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // panel6
+            // btnSettingOk
             // 
-            this.panel6.Controls.Add(this.lblMatchTypeSetting);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.nmrNumberMatch);
-            this.panel6.Controls.Add(this.cbbInfo);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(21, 198);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(950, 54);
-            this.panel6.TabIndex = 96;
+            this.btnSettingOk.BackColor = System.Drawing.Color.Blue;
+            this.btnSettingOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettingOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettingOk.ForeColor = System.Drawing.Color.White;
+            this.btnSettingOk.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnSettingOk.Location = new System.Drawing.Point(714, 3);
+            this.btnSettingOk.Name = "btnSettingOk";
+            this.btnSettingOk.Size = new System.Drawing.Size(228, 44);
+            this.btnSettingOk.TabIndex = 99;
+            this.btnSettingOk.Text = "Bắt đầu trận đấu mới";
+            this.btnSettingOk.UseVisualStyleBackColor = false;
+            this.btnSettingOk.Click += new System.EventHandler(this.btnSettingOk_Click);
+            // 
+            // lblNameWin
+            // 
+            this.lblNameWin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNameWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameWin.Location = new System.Drawing.Point(714, 50);
+            this.lblNameWin.Name = "lblNameWin";
+            this.lblNameWin.Size = new System.Drawing.Size(233, 50);
+            this.lblNameWin.TabIndex = 100;
+            this.lblNameWin.Text = "-";
+            this.lblNameWin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.23858F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.76142F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel2.Controls.Add(this.lblMatchTypeSetting, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label6, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.nmrNumberMatch, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cbbInfo, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 1, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(21, 85);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(950, 100);
+            this.tableLayoutPanel2.TabIndex = 116;
             // 
             // lblMatchTypeSetting
             // 
             this.lblMatchTypeSetting.AutoSize = true;
-            this.lblMatchTypeSetting.Location = new System.Drawing.Point(843, 15);
+            this.lblMatchTypeSetting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMatchTypeSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatchTypeSetting.Location = new System.Drawing.Point(792, 49);
             this.lblMatchTypeSetting.Name = "lblMatchTypeSetting";
-            this.lblMatchTypeSetting.Size = new System.Drawing.Size(17, 22);
+            this.lblMatchTypeSetting.Size = new System.Drawing.Size(155, 51);
             this.lblMatchTypeSetting.TabIndex = 96;
             this.lblMatchTypeSetting.Text = "-";
+            this.lblMatchTypeSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(3, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(580, 49);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Trận số";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(756, 13);
+            this.label6.Location = new System.Drawing.Point(792, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 23);
+            this.label6.Size = new System.Drawing.Size(155, 49);
             this.label6.TabIndex = 95;
             this.label6.Text = "Loại trận";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nmrNumberMatch
             // 
-            this.nmrNumberMatch.Location = new System.Drawing.Point(204, 10);
+            this.nmrNumberMatch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nmrNumberMatch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nmrNumberMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmrNumberMatch.Location = new System.Drawing.Point(3, 52);
             this.nmrNumberMatch.Maximum = new decimal(new int[] {
             300,
             0,
             0,
             0});
             this.nmrNumberMatch.Name = "nmrNumberMatch";
-            this.nmrNumberMatch.Size = new System.Drawing.Size(121, 30);
+            this.nmrNumberMatch.Size = new System.Drawing.Size(580, 41);
             this.nmrNumberMatch.TabIndex = 94;
+            this.nmrNumberMatch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nmrNumberMatch.ValueChanged += new System.EventHandler(this.nmrNumberMatch_ValueChanged);
             // 
             // cbbInfo
             // 
+            this.cbbInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbbInfo.Enabled = false;
+            this.cbbInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbInfo.FormattingEnabled = true;
             this.cbbInfo.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbbInfo.Location = new System.Drawing.Point(539, 10);
+            this.cbbInfo.Location = new System.Drawing.Point(589, 52);
             this.cbbInfo.Name = "cbbInfo";
-            this.cbbInfo.Size = new System.Drawing.Size(144, 30);
+            this.cbbInfo.Size = new System.Drawing.Size(197, 39);
             this.cbbInfo.TabIndex = 8;
             this.cbbInfo.Text = "Nam";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(129, 14);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 23);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Trận số";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(448, 14);
+            this.label11.Location = new System.Drawing.Point(589, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 23);
+            this.label11.Size = new System.Drawing.Size(197, 49);
             this.label11.TabIndex = 1;
             this.label11.Text = "Thông tin";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(287, 79);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 113;
+            this.pictureBox7.TabStop = false;
+            // 
+            // btnFullScreen
+            // 
+            this.btnFullScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFullScreen.BackColor = System.Drawing.Color.Green;
+            this.btnFullScreen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnFullScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFullScreen.ForeColor = System.Drawing.Color.White;
+            this.btnFullScreen.Location = new System.Drawing.Point(857, 5);
+            this.btnFullScreen.Name = "btnFullScreen";
+            this.btnFullScreen.Size = new System.Drawing.Size(60, 60);
+            this.btnFullScreen.TabIndex = 101;
+            this.btnFullScreen.Text = "Zoom";
+            this.btnFullScreen.UseVisualStyleBackColor = false;
+            this.btnFullScreen.Visible = false;
+            this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.06086F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.43022F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.50892F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel1.Controls.Add(this.btnWinBeforeBlue, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnWinBeforeRed, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 1);
@@ -893,36 +906,66 @@
             this.tableLayoutPanel1.Controls.Add(this.txtSchoolRed, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSchoolBlue, 2, 2);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 259);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 219);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(880, 98);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(950, 98);
             this.tableLayoutPanel1.TabIndex = 95;
+            // 
+            // btnWinBeforeBlue
+            // 
+            this.btnWinBeforeBlue.BackColor = System.Drawing.Color.Blue;
+            this.btnWinBeforeBlue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnWinBeforeBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWinBeforeBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWinBeforeBlue.ForeColor = System.Drawing.Color.White;
+            this.btnWinBeforeBlue.Location = new System.Drawing.Point(875, 67);
+            this.btnWinBeforeBlue.Name = "btnWinBeforeBlue";
+            this.btnWinBeforeBlue.Size = new System.Drawing.Size(72, 28);
+            this.btnWinBeforeBlue.TabIndex = 117;
+            this.btnWinBeforeBlue.Text = "Win";
+            this.btnWinBeforeBlue.UseVisualStyleBackColor = false;
+            this.btnWinBeforeBlue.Click += new System.EventHandler(this.btnWinBeforeBlue_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(126, 0);
+            this.label1.Location = new System.Drawing.Point(125, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 32);
+            this.label1.Size = new System.Drawing.Size(259, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnWinBeforeRed
+            // 
+            this.btnWinBeforeRed.BackColor = System.Drawing.Color.Red;
+            this.btnWinBeforeRed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnWinBeforeRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWinBeforeRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWinBeforeRed.ForeColor = System.Drawing.Color.White;
+            this.btnWinBeforeRed.Location = new System.Drawing.Point(875, 35);
+            this.btnWinBeforeRed.Name = "btnWinBeforeRed";
+            this.btnWinBeforeRed.Size = new System.Drawing.Size(72, 26);
+            this.btnWinBeforeRed.TabIndex = 116;
+            this.btnWinBeforeRed.Text = "Win";
+            this.btnWinBeforeRed.UseVisualStyleBackColor = false;
+            this.btnWinBeforeRed.Click += new System.EventHandler(this.btnWinBeforeRed_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 0);
+            this.label5.Location = new System.Drawing.Point(390, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(484, 32);
+            this.label5.Size = new System.Drawing.Size(479, 32);
             this.label5.TabIndex = 1;
             this.label5.Text = "Đơn vị";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -935,7 +978,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(3, 67);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 31);
+            this.label9.Size = new System.Drawing.Size(116, 31);
             this.label9.TabIndex = 4;
             this.label9.Text = "Xanh";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -948,7 +991,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(3, 32);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 32);
+            this.label8.Size = new System.Drawing.Size(116, 32);
             this.label8.TabIndex = 3;
             this.label8.Text = "Đỏ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -959,9 +1002,9 @@
             this.txtNameRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNameRed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNameRed.ForeColor = System.Drawing.Color.White;
-            this.txtNameRed.Location = new System.Drawing.Point(126, 35);
+            this.txtNameRed.Location = new System.Drawing.Point(125, 35);
             this.txtNameRed.Name = "txtNameRed";
-            this.txtNameRed.Size = new System.Drawing.Size(261, 30);
+            this.txtNameRed.Size = new System.Drawing.Size(259, 30);
             this.txtNameRed.TabIndex = 94;
             // 
             // txtNameBlue
@@ -970,9 +1013,9 @@
             this.txtNameBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNameBlue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNameBlue.ForeColor = System.Drawing.Color.White;
-            this.txtNameBlue.Location = new System.Drawing.Point(126, 67);
+            this.txtNameBlue.Location = new System.Drawing.Point(125, 67);
             this.txtNameBlue.Name = "txtNameBlue";
-            this.txtNameBlue.Size = new System.Drawing.Size(261, 30);
+            this.txtNameBlue.Size = new System.Drawing.Size(259, 30);
             this.txtNameBlue.TabIndex = 95;
             // 
             // txtSchoolRed
@@ -981,9 +1024,9 @@
             this.txtSchoolRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSchoolRed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSchoolRed.ForeColor = System.Drawing.Color.White;
-            this.txtSchoolRed.Location = new System.Drawing.Point(393, 35);
+            this.txtSchoolRed.Location = new System.Drawing.Point(390, 35);
             this.txtSchoolRed.Name = "txtSchoolRed";
-            this.txtSchoolRed.Size = new System.Drawing.Size(484, 30);
+            this.txtSchoolRed.Size = new System.Drawing.Size(479, 30);
             this.txtSchoolRed.TabIndex = 96;
             // 
             // txtSchoolBlue
@@ -992,43 +1035,69 @@
             this.txtSchoolBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSchoolBlue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSchoolBlue.ForeColor = System.Drawing.Color.White;
-            this.txtSchoolBlue.Location = new System.Drawing.Point(393, 67);
+            this.txtSchoolBlue.Location = new System.Drawing.Point(390, 67);
             this.txtSchoolBlue.Name = "txtSchoolBlue";
-            this.txtSchoolBlue.Size = new System.Drawing.Size(484, 30);
+            this.txtSchoolBlue.Size = new System.Drawing.Size(479, 30);
             this.txtSchoolBlue.TabIndex = 97;
             // 
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.White;
-            this.pnlMain.Controls.Add(this.pnlClock);
+            this.pnlMain.Controls.Add(this.lblSecName);
+            this.pnlMain.Controls.Add(this.lblClock);
+            this.pnlMain.Controls.Add(this.lblScoreRed);
+            this.pnlMain.Controls.Add(this.btnScoreSec2Blue);
+            this.pnlMain.Controls.Add(this.btnScoreSec2Red);
+            this.pnlMain.Controls.Add(this.label14);
+            this.pnlMain.Controls.Add(this.label13);
+            this.pnlMain.Controls.Add(this.btnScoreSec1Red);
+            this.pnlMain.Controls.Add(this.label2);
             this.pnlMain.Controls.Add(this.txtFocus);
+            this.pnlMain.Controls.Add(this.btnWinRed);
+            this.pnlMain.Controls.Add(this.btnScoreSec1Blue);
+            this.pnlMain.Controls.Add(this.pnlLineRed);
+            this.pnlMain.Controls.Add(this.label10);
+            this.pnlMain.Controls.Add(this.lblSchoolRed);
             this.pnlMain.Controls.Add(this.lblMatchType);
+            this.pnlMain.Controls.Add(this.lblNameRed);
+            this.pnlMain.Controls.Add(this.btnWinBlue);
+            this.pnlMain.Controls.Add(this.btn2Red);
             this.pnlMain.Controls.Add(this.lblMatchInfo);
+            this.pnlMain.Controls.Add(this.btn1Red);
+            this.pnlMain.Controls.Add(this.pnlLineBlue);
+            this.pnlMain.Controls.Add(this.btnS1Red);
             this.pnlMain.Controls.Add(this.lblMatchNum);
+            this.pnlMain.Controls.Add(this.btnS2Red);
+            this.pnlMain.Controls.Add(this.lblSchoolBlue);
             this.pnlMain.Controls.Add(this.btnEnd);
-            this.pnlMain.Controls.Add(this.label4);
-            this.pnlMain.Controls.Add(this.pnlRed);
-            this.pnlMain.Controls.Add(this.pnlBlue);
+            this.pnlMain.Controls.Add(this.lblScoreBlue);
+            this.pnlMain.Controls.Add(this.btn2Blue);
+            this.pnlMain.Controls.Add(this.btn1Blue);
+            this.pnlMain.Controls.Add(this.btnS2Blue);
+            this.pnlMain.Controls.Add(this.lblNameBlue);
+            this.pnlMain.Controls.Add(this.btnS1Blue);
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1022, 654);
+            this.pnlMain.Size = new System.Drawing.Size(1000, 654);
             this.pnlMain.TabIndex = 28;
             // 
-            // pnlClock
+            // lblSecName
             // 
-            this.pnlClock.Controls.Add(this.lblSecName);
-            this.pnlClock.Controls.Add(this.lblClock);
-            this.pnlClock.Location = new System.Drawing.Point(364, 95);
-            this.pnlClock.Name = "pnlClock";
-            this.pnlClock.Size = new System.Drawing.Size(270, 129);
-            this.pnlClock.TabIndex = 31;
+            this.lblSecName.BackColor = System.Drawing.Color.Yellow;
+            this.lblSecName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecName.Location = new System.Drawing.Point(364, 51);
+            this.lblSecName.Name = "lblSecName";
+            this.lblSecName.Size = new System.Drawing.Size(270, 40);
+            this.lblSecName.TabIndex = 2;
+            this.lblSecName.Text = "Hiệp 1";
+            this.lblSecName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtFocus
             // 
             this.txtFocus.Location = new System.Drawing.Point(0, 0);
             this.txtFocus.Name = "txtFocus";
             this.txtFocus.Size = new System.Drawing.Size(0, 20);
-            this.txtFocus.TabIndex = 30;
+            this.txtFocus.TabIndex = 1;
             this.txtFocus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFocus_KeyPress);
             // 
             // lblMatchType
@@ -1036,7 +1105,7 @@
             this.lblMatchType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatchType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMatchType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatchType.Location = new System.Drawing.Point(100, 11);
+            this.lblMatchType.Location = new System.Drawing.Point(99, 5);
             this.lblMatchType.Name = "lblMatchType";
             this.lblMatchType.Size = new System.Drawing.Size(50, 90);
             this.lblMatchType.TabIndex = 29;
@@ -1058,24 +1127,12 @@
             this.tmrWin.Interval = 500;
             this.tmrWin.Tick += new System.EventHandler(this.tmrWin_Tick);
             // 
-            // lblSecName
-            // 
-            this.lblSecName.BackColor = System.Drawing.Color.Transparent;
-            this.lblSecName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblSecName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecName.Location = new System.Drawing.Point(0, 0);
-            this.lblSecName.Name = "lblSecName";
-            this.lblSecName.Size = new System.Drawing.Size(270, 40);
-            this.lblSecName.TabIndex = 2;
-            this.lblSecName.Text = "Hiệp 1";
-            this.lblSecName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1258, 650);
+            this.ClientSize = new System.Drawing.Size(1035, 650);
             this.Controls.Add(this.pnlSetting);
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1087,24 +1144,20 @@
             this.Text = "Chấm điểm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Resize += new System.EventHandler(this.Form1_Resize);
-            this.pnlRed.ResumeLayout(false);
-            this.pnlBlue.ResumeLayout(false);
             this.pnlSetting.ResumeLayout(false);
-            this.pnlSetting.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.tblSetting.ResumeLayout(false);
+            this.tblSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrSecTimeSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrFreeTimeSource)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrNumberMatch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
-            this.pnlClock.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1124,13 +1177,11 @@
         private System.Windows.Forms.Button btn1Red;
         private System.Windows.Forms.Button btnS1Red;
         private System.Windows.Forms.Button btnS2Red;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTitleMain;
         private System.Windows.Forms.Label lblMatchInfo;
         private System.Windows.Forms.Label lblMatchNum;
         private System.Windows.Forms.Label lblNameBlue;
         private System.Windows.Forms.Label lblSchoolBlue;
-        private System.Windows.Forms.Panel pnlRed;
-        private System.Windows.Forms.Panel pnlBlue;
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Panel pnlLineRed;
         private System.Windows.Forms.Panel pnlLineBlue;
@@ -1142,7 +1193,6 @@
         private System.Windows.Forms.Button btnSettingOk;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.NumericUpDown nmrNumberMatch;
         private System.Windows.Forms.ComboBox cbbInfo;
         private System.Windows.Forms.Label label12;
@@ -1162,7 +1212,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnWinBlue;
         private System.Windows.Forms.Button btnWinRed;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnScoreSec2Red;
@@ -1173,19 +1222,21 @@
         private System.Windows.Forms.Button btnScoreSec1Blue;
         private System.Windows.Forms.Label lblScoreRed;
         private System.Windows.Forms.TextBox txtFocus;
-        private System.Windows.Forms.Panel pnlClock;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnWinBeforeBlue;
         private System.Windows.Forms.Button btnWinBeforeRed;
         private System.Windows.Forms.Label lblSecName;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button btnSetting;
+        private System.Windows.Forms.TableLayoutPanel tblSetting;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.NumericUpDown nmrSecTimeSource;
+        private System.Windows.Forms.NumericUpDown nmrFreeTimeSource;
+        private System.Windows.Forms.TextBox txtTitleSource;
+        private System.Windows.Forms.Button btnExit;
 
     }
 }

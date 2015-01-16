@@ -14,11 +14,11 @@ namespace ScoringSystem
     {
         private Function function;
         private FillData fillData;
+        private int hightScreen = Screen.PrimaryScreen.Bounds.Height;
+        private int widthScreen = Screen.PrimaryScreen.Bounds.Width;
         public Form1()
         {
             InitializeComponent();
-
-            txtFocus.Focus();
 
             pnlSetting.Width = pnlMain.Width;
             pnlSetting.Height = pnlMain.Height;
@@ -39,12 +39,94 @@ namespace ScoringSystem
                 this.Top = 0;
                 this.Bounds = Screen.PrimaryScreen.Bounds;
                 this.TopMost = true;
+
+
             }
             pnlMain.Left = (this.ClientSize.Width - pnlMain.Width) / 2;
             pnlMain.Top = (this.ClientSize.Height - pnlMain.Height) / 2;
             pnlSetting.Left = pnlMain.Left;
             pnlSetting.Top = pnlMain.Top;
             pibFullScreenClick();
+            txtFocus.Focus();
+        }
+
+        public void BuiltObject()
+        {
+            pnlMain.Dock = DockStyle.Fill;
+            pnlSetting.Dock = DockStyle.Fill;
+            double ratioWidth = pnlMain.Width * 1.0 / Variable.pnlMainWidth;
+            double ratioHeight = pnlMain.Height * 1.0 / Variable.pnlMainHeight;
+
+            List<Label> label = new List<Label>();
+            label.Add(lblClock);
+            label.Add(lblMatchInfo);
+            label.Add(lblMatchNum);
+            label.Add(lblMatchType);
+            label.Add(lblNameBlue);
+            label.Add(lblNameRed);
+            label.Add(lblNameWin);
+            label.Add(lblSchoolBlue);
+            label.Add(lblSchoolRed);
+            label.Add(lblScoreBlue);
+            label.Add(lblScoreRed);
+            label.Add(lblSecName);
+            label.Add(lblTitleMain);
+            label.Add(label2);
+            label.Add(label10);
+            label.Add(label14);
+            label.Add(label13);
+            foreach (var lbl in label)
+            {
+                lbl.Left = (int)(lbl.Left * ratioWidth);
+                lbl.Top = (int)(lbl.Top * ratioHeight);
+                lbl.Width = (int)(lbl.Width * ratioWidth);
+                lbl.Height = (int)(lbl.Height * ratioHeight);
+                float min = ratioWidth < ratioHeight ? (float)ratioWidth : (float)ratioHeight;
+                lbl.Font = new Font("Microsoft Sans Serif", (int)(lbl.Font.Size * min));
+            }
+
+
+
+            List<Button> button = new List<Button>();
+            button.Add(btn1Blue);
+            button.Add(btn1Red);
+            button.Add(btn2Blue);
+            button.Add(btn2Red);
+            button.Add(btnS1Blue);
+            button.Add(btnS1Red);
+            button.Add(btnS2Blue);
+            button.Add(btnS2Red);
+            button.Add(btnWinBlue);
+            button.Add(btnWinRed);
+            button.Add(btnEnd);
+            button.Add(btnScoreSec1Blue);
+            button.Add(btnScoreSec1Red);
+            button.Add(btnScoreSec2Blue);
+            button.Add(btnScoreSec2Red);
+            foreach (var btn in button)
+            {
+                btn.Left = (int)(btn.Left * ratioWidth);
+                btn.Top = (int)(btn.Top * ratioHeight);
+                btn.Width = (int)(btn.Width * ratioWidth);
+                btn.Height = (int)(btn.Height * ratioHeight);
+            }
+
+            List<Panel> panel = new List<Panel>();
+            panel.Add(pnlLineBlue);
+            panel.Add(pnlLineRed);
+            foreach (var pnl in panel)
+            {
+                pnl.Left = (int)(pnl.Left * ratioWidth);
+                pnl.Top = (int)(pnl.Top * ratioHeight);
+                pnl.Width = (int)(pnl.Width * ratioWidth);
+                pnl.Height = (int)(pnl.Height * ratioHeight);
+            }
+
+            //lblMatchNum
+            /* lblMatchNum.Left = (int)(lblMatchNum.Left * (pnlMain.Width * 1.0 / 1000));
+             lblMatchNum.Top = (int)(lblMatchNum.Top * (pnlMain.Height * 1.0 / 654));
+             lblMatchNum.Width = (int)(lblMatchNum.Width * (pnlMain.Width * 1.0 / 1000));
+             lblMatchNum.Height = (int)(lblMatchNum.Height * (pnlMain.Height * 1.0 / 654));*/
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -53,6 +135,8 @@ namespace ScoringSystem
             pnlMain.Top = (this.ClientSize.Height - pnlMain.Height) / 2;
             pnlSetting.Left = pnlMain.Left;
             pnlSetting.Top = pnlMain.Top;
+
+
         }
 
         private void btnFullScreen_Click(object sender, EventArgs e)
@@ -106,6 +190,8 @@ namespace ScoringSystem
                 this.StartPosition = FormStartPosition.CenterScreen;
                 stateForm = false;
             }
+
+            BuiltObject();
         }
 
         #region Event Click Plus
@@ -280,7 +366,8 @@ namespace ScoringSystem
             {
                 function.PlaySound();
                 Variable.type = 0;
-                pnlClock.BackColor = Color.Orange;
+                lblSecName.BackColor = Color.Orange;
+                lblClock.BackColor = Color.Orange;
                 tmrWait.Enabled = true;
                 tmrClock.Enabled = false;
             }
@@ -317,7 +404,8 @@ namespace ScoringSystem
             {
                 //Chay
                 //Mau trang chay
-                pnlClock.BackColor = Color.White;
+                lblSecName.BackColor = Color.White;
+                lblClock.BackColor = Color.White;
                 tmrClock.Enabled = true;
                 Variable.type = 1;
             }
@@ -326,7 +414,8 @@ namespace ScoringSystem
             {
                 //dung
                 //Mau vang chay
-                pnlClock.BackColor = Color.Yellow;
+                lblSecName.BackColor = Color.Yellow;
+                lblClock.BackColor = Color.Yellow;
                 tmrClock.Enabled = false;
                 Variable.type = 0;
             }
@@ -373,7 +462,8 @@ namespace ScoringSystem
             //Het hiep 1
             else if (Variable.sec == 1)
             {
-                pnlClock.BackColor = Color.White;
+                lblSecName.BackColor = Color.White;
+                lblClock.BackColor = Color.White;
                 lblSecName.Text = "Giải lao";
                 Variable.sec = 0;
                 Variable.second = Variable.timeFree;
@@ -387,7 +477,8 @@ namespace ScoringSystem
             //Het Giai lao
             else if (Variable.sec == 0)
             {
-                pnlClock.BackColor = Color.Yellow;
+                lblSecName.BackColor = Color.Yellow;
+                lblClock.BackColor = Color.Yellow;
                 lblSecName.Text = "Hiệp 2";
                 Variable.sec = 2;
                 Variable.second = Variable.timeSec;
@@ -433,6 +524,10 @@ namespace ScoringSystem
 
         private void btnSettingOk_Click(object sender, EventArgs e)
         {
+            Variable.timeSec = Convert.ToInt32(nmrSecTimeSource.Value);
+            Variable.timeFree = Convert.ToInt32(nmrFreeTimeSource.Value);
+            lblTitleMain.Text = txtTitleSource.Text;
+
             //Nếu 1 trong 2 tên chưa được điền thì bỏ qua
             if (!fillData.checkIsNumber(txtNameRed.Text))
             {
@@ -488,7 +583,8 @@ namespace ScoringSystem
             }
 
             lblSecName.Text = "Hiệp 1";
-            pnlClock.BackColor = Color.Yellow;
+            lblSecName.BackColor = Color.Yellow;
+            lblClock.BackColor = Color.Yellow;
             lblClock.Text = function.CalClock(Variable.timeSec);
             lblScoreRed.Text = function.CalNumber("0", 0);
             lblScoreBlue.Text = function.CalNumber("0", 0);
@@ -663,6 +759,28 @@ namespace ScoringSystem
         private void pnlLineBlue_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pnlSetting_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            tblSetting.Visible = !tblSetting.Visible;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có thực sự muốn tắt phần mềm?", "Tắt phần mềm!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Environment.Exit(1);
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+            }
         }
     }
 }
