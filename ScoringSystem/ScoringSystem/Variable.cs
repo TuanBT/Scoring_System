@@ -16,6 +16,7 @@ namespace ScoringSystem
         public static int LastScore = -1;    //0 Red, 1 blue
         public static List<Match> MATCHES { get; set; }
         public static int[] score = {0, 0, 0, 0, 0, 0}; //Tổng đỏ, tổng xanh, h1 đỏ, h1 xanh, h2 đỏ, h2 xanh
+        public static int indexSound = 1;
 
         public static int pnlMainHeight = 654;
         public static int pnlMainWidth = 1000;

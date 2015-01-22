@@ -364,7 +364,7 @@ namespace ScoringSystem
             //Het gio
             if (Variable.second == 0)
             {
-                function.PlaySound();
+                function.PlaySound(Variable.indexSound);
                 Variable.type = 0;
                 lblSecName.BackColor = Color.Orange;
                 lblClock.BackColor = Color.Orange;
@@ -390,7 +390,7 @@ namespace ScoringSystem
             if (tmrWait.Enabled == true) return;
             if (Variable.second == Variable.timeSec && Variable.type == 0)
             {
-                function.PlaySound();
+                function.PlaySound(Variable.indexSound);
                 Thread.Sleep(2000);
             }
             //Neu dang hiep 1
@@ -524,9 +524,18 @@ namespace ScoringSystem
 
         private void btnSettingOk_Click(object sender, EventArgs e)
         {
+            lblTitleMain.Text = txtTitleSource.Text;
             Variable.timeSec = Convert.ToInt32(nmrSecTimeSource.Value);
             Variable.timeFree = Convert.ToInt32(nmrFreeTimeSource.Value);
-            lblTitleMain.Text = txtTitleSource.Text;
+            if (cbbSound.SelectedIndex == 0)
+            {
+                Variable.indexSound = 1;
+            }
+            else if (cbbSound.SelectedIndex == 1)
+            {
+                Variable.indexSound = 2;
+            }
+
 
             //Nếu 1 trong 2 tên chưa được điền thì bỏ qua
             if (!fillData.checkIsNumber(txtNameRed.Text))
@@ -700,7 +709,7 @@ namespace ScoringSystem
                 //Nếu đang chạy
                 if (Variable.type == 1)
                 {
-                    function.PlaySound();
+                    function.PlaySound(Variable.indexSound);
                     ClockClick();
                 }
             }
@@ -781,6 +790,16 @@ namespace ScoringSystem
             else if (dialogResult == DialogResult.No)
             {
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbSound_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

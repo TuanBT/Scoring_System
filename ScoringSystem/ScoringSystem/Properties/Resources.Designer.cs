@@ -63,6 +63,15 @@ namespace ScoringSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream BigBong {
+            get {
+                return ResourceManager.GetStream("BigBong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Reggg {
             get {
                 return ResourceManager.GetStream("Reggg", resourceCulture);

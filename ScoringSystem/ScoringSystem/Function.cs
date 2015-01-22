@@ -33,16 +33,19 @@ namespace ScoringSystem
             return min + ":" + sec;
         }
 
-        public void PlaySound()
+        public void PlaySound(int indexSound)
         {
-            SoundPlayer Sound = new SoundPlayer(Properties.Resources.Reggg);
-            Sound.Play();
-        }
+            if (indexSound == 1)
+            {
+                SoundPlayer Sound = new SoundPlayer(Properties.Resources.Reggg);
+                Sound.Play();
+            }
+            else if (indexSound == 2)
+            {
+                SoundPlayer Sound = new SoundPlayer(Properties.Resources.BigBong);
+                Sound.Play();
+            }
 
-        public void PlaySound(Timer tmr)
-        {
-            SoundPlayer Sound = new SoundPlayer(Properties.Resources.Reggg);
-            Sound.Play();
         }
     }
 }

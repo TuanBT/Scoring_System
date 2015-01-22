@@ -100,7 +100,7 @@
     <None Include="Resources\Reggg.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Match.txt" />
+    <None Include="Resources\BigBong.wav" />
     <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
