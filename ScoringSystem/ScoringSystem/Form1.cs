@@ -28,7 +28,7 @@ namespace ScoringSystem
             pnlSetting.Top = pnlMain.Top;
 
             function = new Function();
-            fillData = new FillData(nmrNumberMatch, cbbInfo, lblMatchTypeSetting, txtNameRed, txtNameBlue, txtSchoolRed, txtSchoolBlue, lblNameWin);
+            fillData = new FillData(nmrNumberMatch, lblInfo, lblMatchTypeSetting, txtNameRed, txtNameBlue, txtSchoolRed, txtSchoolBlue, lblNameWin);
             Variable.MATCHES = TextDataUltil.ReadMatchText();
 
             //Full screen
@@ -525,6 +525,7 @@ namespace ScoringSystem
         private void btnSettingOk_Click(object sender, EventArgs e)
         {
             lblTitleMain.Text = txtTitleSource.Text;
+            lblTitleMain2.Text = txtTitleSource.Text;
             Variable.timeSec = Convert.ToInt32(nmrSecTimeSource.Value);
             Variable.timeFree = Convert.ToInt32(nmrFreeTimeSource.Value);
             if (cbbSound.SelectedIndex == 0)
@@ -580,7 +581,7 @@ namespace ScoringSystem
             lblNameRed.Text = txtNameRed.Text;
             lblSchoolBlue.Text = txtSchoolBlue.Text;
             lblNameBlue.Text = txtNameBlue.Text;
-            lblMatchInfo.Text = cbbInfo.Text;
+            lblMatchInfo.Text = lblInfo.Text;
             lblMatchType.Text = lblMatchTypeSetting.Text;
             if (lblMatchTypeSetting.Text == "")
             {

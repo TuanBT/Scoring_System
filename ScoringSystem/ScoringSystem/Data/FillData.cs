@@ -10,7 +10,7 @@ namespace ScoringSystem.Data
     {
         //private TextBox txtNumberMatch;
         private NumericUpDown nmrNumberMatch;
-        private ComboBox cbbInfo;
+        private Label lblInfo;
         private Label lblMatchTypeSetting;
 
         private TextBox txtNameRed;
@@ -20,11 +20,11 @@ namespace ScoringSystem.Data
 
         private Label lblNameWin;
 
-        public FillData(NumericUpDown nmrNumberMatch, ComboBox cbbInfo,Label lblMatchTypeSetting,
+        public FillData(NumericUpDown nmrNumberMatch, Label lblInfo, Label lblMatchTypeSetting,
             TextBox txtNameRed, TextBox txtNameBlue, TextBox txtSchoolRed, TextBox txtSchoolBlue, Label lblNameWin)
         {
             this.nmrNumberMatch = nmrNumberMatch;
-            this.cbbInfo = cbbInfo;
+            this.lblInfo = lblInfo;
             this.lblMatchTypeSetting = lblMatchTypeSetting;
 
             this.txtNameRed = txtNameRed;
@@ -59,7 +59,7 @@ namespace ScoringSystem.Data
                     {
                         match = SetInfoFromMatchId(matchString, match.NameRed, match.NameBlue);
 
-                        cbbInfo.Text = match.MatchInfo;
+                        lblInfo.Text = match.MatchInfo;
                         lblMatchTypeSetting.Text = match.MatchType;
                         txtNameRed.Text = match.NameRed;
                         txtSchoolRed.Text = match.SchoolRed;
